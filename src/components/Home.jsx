@@ -46,9 +46,9 @@ export default function Home() {
               <img className='tb' src="https://www.conclusion.com.ar/wp-content/uploads/2018/08/empanada-.jpg" alt="imagenempanadas" />
               <img className='tb' src="https://radiomitre-la100-prod.cdn.arcpublishing.com/resizer/IW5XKsL9u44uWlkjn3idnmZL1MQ=/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/radiomitre/WV3OJNLFRJD65IIWSSUHRC2NHA.jpg" alt="imagenpizzados" />
               <img className='tb' src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2018/09/receta-super-facil-de-carne-para-hamburguesa-suave.jpg" alt="imagenhamburguesa" />
-              <img className='tbdos' src="https://lareceta.com.ar/uploads/notas/phpjaqvOr.jpg" alt="imagenpizzatres" />
+              {/* <img className='tbdos' src="https://lareceta.com.ar/uploads/notas/phpjaqvOr.jpg" alt="imagenpizzatres" /> */}
               <img className='tb' src="https://www.petitchef.es/imgupl/recipe/papas-fritas--460076p722472.jpg" alt="imagenpapas" />
-               <img className='tb' src="https://gridoquilmes.files.wordpress.com/2011/05/crocantino.jpg" alt="postrehelado" />
+               {/* <img className='tb' src="https://gridoquilmes.files.wordpress.com/2011/05/crocantino.jpg" alt="postrehelado" /> */}
             </div>
           
         </div>
