@@ -26,6 +26,9 @@ export default function Nosotros(){
         <br />
         <br />
         <br />
+        <br />
+        <br />
+        <br />
 
         <div className='fondodos'>
         <a style={{ width:"auto"}} href="https://api.whatsapp.com/send?phone=1166635478">  
