@@ -73,6 +73,9 @@
  
   background-color: #000000d6;
   padding: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
 
 .cajaPlatos{
@@ -115,7 +118,10 @@
   display: flex;
   position: relative;
    justify-content: center;
+   align-items: center;
    text-align: center;
+   padding: 5px;
+   flex-direction: column;
 }
       
 
