@@ -1,0 +1,71 @@
+.centradoInfo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4%;
+  }
+
+  
+  .imageInfo{
+   width: 10%;
+  
+  }
+
+  .metpago{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+  }
+
+.pag{
+    display:contents;
+    position: relative;
+    align-items: center;
+    
+}
+
+.iconouno{
+  width: 15% ;
+}
+
+.iconodos{
+  width: 12% ;
+  padding: 1%;
+}
+
+.iconotres{
+  width: 8% ;
+  padding: 0.2%;
+}
+
+  @media(max-width: 550px){
+    .centradoInfo{
+        font-size: small;
+    }}
+    
+    @media(max-width: 550px){
+        h1{
+            font-size: x-large;
+        }}
+        
+  @media(max-width: 800px){
+    .imageInfo{
+      width: 25%;
+  }}
+
+  @media(max-width: 500px){
+    .imageInfo{
+      width: 35%;
+  }}
+
+  @media(max-width: 550px) {
+    .metpago{
+      width: 100%;
+    }
+    
+  }

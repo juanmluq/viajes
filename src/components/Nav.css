@@ -1,0 +1,27 @@
+
+.navBtn{
+    margin-left: auto;
+    margin-right: 4%;
+    display: flex;
+    position: relative;
+    align-items: center; 
+}
+
+.nav-link{
+padding: 10px;
+margin-Top: 0.5%;
+}
+
+
+.btn{
+    border: solid 1px white;
+    background-color: black;
+    color: azure;
+    margin-bottom: 1px;
+}
+
+    @media(max-width: 400px){ 
+        .nav, .btn{    
+          font-size: x-small;
+          }
+        }

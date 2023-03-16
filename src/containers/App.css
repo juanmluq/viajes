@@ -1,0 +1,22 @@
+.app{
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/549/471/non_2x/elegant-lilac-background-free-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.header{
+  position:fixed;
+  width: 100%;
+  height: 4rem;
+  z-index: 1;
+  background-color: #ffffff00;
+  padding: 1rem;
+}
+
+.app {
+  height: 100%;
+  min-height: 100vh;
+}
+
+

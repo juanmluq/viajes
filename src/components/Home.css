@@ -1,0 +1,186 @@
+.home {
+  color:rgba(255, 255, 255, 0.884);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;  
+}
+
+@media(max-width: 550px){ 
+  .home{    
+    font-size:x-small;
+    }
+}
+
+.marca{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: start;
+  width: 30%;
+
+}
+
+.imgLog{
+  width: 30%;
+}
+
+.btns{
+  width: 20%;
+}
+
+.imagens{
+  margin-top: -29%;
+  opacity: 0.2;
+  border-bottom: groove 15px white;
+}
+
+
+  .texto {
+    display: flex;
+    position: relative;
+    padding-left: 3%;
+    background: -webkit-linear-gradient(#fff,rgb(132 255 255 / 67%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(204, 172, 172);  
+    animation: 2s linear 0s infinite alternate rise ;
+    font-family: Always Smile Normal
+  }
+
+  .bienvenido{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    color: rgb(179, 193, 206);
+    background-color: #90449591;
+    padding: 3%;
+  }
+
+  .subbienv{
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    border: outset;
+    border-radius: 20% / 10% 10%;
+    margin: 1%;
+    width: 25%;
+    padding: 1%;   
+  }
+
+.fondodos{
+ 
+  background-color: #000000d6;
+  padding: 20px;
+}
+
+.cajaPlatos{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+  }
+
+  .platos{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    animation: 10s linear 0s infinite alternate trasladarx ;
+
+  }
+
+.dospag{
+    display:contents;
+    position: relative;
+    align-items: center;
+    
+}
+
+.tb{
+  width: 25% ;
+  padding: 1%;
+}
+
+.tbdos{
+  width: 22% ;
+  padding: 1%;
+}
+
+.piepag{
+  display: flex;
+  position: relative;
+   justify-content: center;
+   text-align: center;
+}
+      
+
+  @keyframes rise {
+        from {
+          transform: perspective(100px) translateZ(1px)
+        }
+        to {
+          transform: translateZ(2px);
+        }
+      }
+     
+  @keyframes trasladarx {
+        from {
+          transform: perspective(100px) translateX(500px)
+        }
+        to {
+          transform: translateX(-500px);
+        }
+      }
+ 
+          
+  @media(max-width: 800px){ 
+            .bienvenido{    
+              font-size:x-small;
+              }
+            }
+            @media(max-width: 600px){ 
+              .bienvenido{    
+                flex-direction: column;
+                }
+              }
+              @media(max-width: 600px){ 
+                .subbienv{    
+                  width: 90%;
+                  margin-left: 5%;
+                  }
+                }
+              
+        
+  @media(max-width: 800px){ 
+              h2, h3{    
+                font-size:x-large;
+              }
+              }
+        
+  @media(max-width: 440px){ 
+                h2, h3{    
+                  font-size:medium;
+                  }
+                }
+        
+@media(max-width: 440px){
+                  h1{
+                    font-size: xx-large;
+                  }
+                }
+
+      @media(max-width: 550px) {
+                  .fondodos{
+                    font-size: x-small;
+                  }
+                }
+                @media(max-width: 440px){
+                  h6{
+                    display: none;
+                  }
+                }
