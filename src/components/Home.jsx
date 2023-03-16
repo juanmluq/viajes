@@ -42,7 +42,7 @@ export default function Home() {
           
           <div className='platos'>
             <div className='dospag'> 
-              <img className='tb' src="https://radiomitre-la100-prod.cdn.arcpublishing.com/resizer/UV47YvDpIf1G2MsltxsUQfd0NME=/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/radiomitre/DVXXA3D23FECNL7B25UNPRBZOI.jpg" alt="imagenpizza" />
+              {/* <img className='tb' src="https://radiomitre-la100-prod.cdn.arcpublishing.com/resizer/UV47YvDpIf1G2MsltxsUQfd0NME=/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/radiomitre/DVXXA3D23FECNL7B25UNPRBZOI.jpg" alt="imagenpizza" /> */}
               <img className='tb' src="https://www.conclusion.com.ar/wp-content/uploads/2018/08/empanada-.jpg" alt="imagenempanadas" />
               <img className='tb' src="https://radiomitre-la100-prod.cdn.arcpublishing.com/resizer/IW5XKsL9u44uWlkjn3idnmZL1MQ=/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/radiomitre/WV3OJNLFRJD65IIWSSUHRC2NHA.jpg" alt="imagenpizzados" />
               <img className='tb' src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2018/09/receta-super-facil-de-carne-para-hamburguesa-suave.jpg" alt="imagenhamburguesa" />
