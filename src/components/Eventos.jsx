@@ -10,7 +10,7 @@ export default function Eventos(){
         <div className="inv">
             
             <h4>Eventos</h4>
-            <h7> Somos de la zona de Canning y ofrecemos nuestros servicios en todo zona sur, caba y algunas zonas no muy alejadas de zona oeste(consultar).
+            <h7> Somos de la zona de Canning. Ofrecemos nuestros servicios en todo zona sur, caba y algunas zonas no muy alejadas de zona oeste(consultar).
     <br/>
         Llegamos al lugar con anticipacion al inicio del evento con nuestros hornos y todo lo necesario para poner manos a la obra. 
                 Pero para asegurarte una jornada inolvidable debemos contar con las condiciones mínimas de trabajo: una pileta para higienizar
