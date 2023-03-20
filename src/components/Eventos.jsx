@@ -10,7 +10,9 @@ export default function Eventos(){
         <div className="inv">
             
             <h4>Eventos</h4>
-            <h7>       Llegamos al lugar con anticipacion al inicio del evento con nuestros hornos y todo lo necesario para poner manos a la obra. 
+            <h7> Somos de la zona de Canning y ofrecemos nuestros servicios en todo zona sur, caba y algunas zonas no muy alejadas de zona oeste(consultar).
+    <br/>
+        Llegamos al lugar con anticipacion al inicio del evento con nuestros hornos y todo lo necesario para poner manos a la obra. 
                 Pero para asegurarte una jornada inolvidable debemos contar con las condiciones mínimas de trabajo: una pileta para higienizar
                  los alimentos, una mesada firme para amasar y un espacio en lo posible cerrado. ¿Por qué cerrado?, Porque de esta manera evitamos 
                  que el viento nos apague el horno y que el frío del invierno o el excesivo calor del verano nos termine enfermando.
