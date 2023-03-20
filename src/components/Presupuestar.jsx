@@ -116,7 +116,7 @@ export default function Pres () {
         <br />
         <br />
         <div className='fondodos'>
-        <a style={{ width:"auto"}} href="https://api.whatsapp.com/send?phone=5491166635478">  
+        <a style={{ width:"auto"}} href="https://api.whatsapp.com/send?phone=+5491166635478">  
 
         <div className='piepag'>
           Whatsapp
