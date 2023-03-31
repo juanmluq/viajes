@@ -1,5 +1,5 @@
 {
-  "name": "TUEVENTO",
+  "name": "tuevento",
   "version": "1.0.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
