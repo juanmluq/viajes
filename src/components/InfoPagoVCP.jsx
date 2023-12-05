@@ -1,11 +1,52 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import "./InfoPago.css";
-import { BsTelephoneInbound, BsWhatsapp, BsFacebook, BsInstagram, BsFillPhoneVibrateFill  } from "react-icons/bs";
+import { postPasajeros } from "./actions/index";
+import { useDispatch, useSelector } from "react-redux";
+import { BsWhatsapp, BsFacebook, BsInstagram, BsFillPhoneVibrateFill  } from "react-icons/bs";
 import { BiMailSend } from "react-icons/bi";
 import qrmp from "../img/qrmp.png"
 
 export default function InfoPagoVCP() {
+  const dispatch = useDispatch()
+  const [ input, setInput ] = useState({//aca uso el input para guardar los datos que cargo en la pagina
+      name:"",
+      email:"",
+      telefono:"",
+      nacimiento:"",
+      fecsalida:"",
+      destino:"",
+      cantpersonas:"",
+      cantnoches:"",
+      pedidoadic:""
+      
+})
 
+function handleChange(e){
+  setInput({ 
+      ...input,
+      [e.target.name] : e.target.value
+  })
+  console.log(input) //con esto veo en consola que se va cargando en el input
+}
+
+function handleSubmit(e) {
+  e.preventDefault();
+  console.log(input)
+  dispatch(postPasajeros(input))
+  alert("Formulario enviado!!")
+  setInput({
+    name:"",
+      email:"",
+      telefono:"",
+      nacimiento:"",
+      fecsalida:"",
+      destino:"",
+      cantpersonas:"",
+      cantnoches:"",
+      pedidoadic:""
+  })
+  //  history.push("/home") //cuando termine de hacer lo anterior llevame al home. El history.push  redirige
+}
   return (
     <div>
     <div className='centradoInfo'>
@@ -17,13 +58,14 @@ export default function InfoPagoVCP() {
 
         <div className="pres">
           
-     <form method='POST' action='https://formsubmit.co/eventosant@gmail.com' >
+     <form onSubmit={(e) => handleSubmit(e)} >
        <div>
          <label for="inputName" class="form-label">Nombre:</label>
          <input class="form-control" id ="inputName"  placeholder='Nombre y apellido' className='forml'
          type="text"
          name="name"
          required
+         onChange={(e) => handleChange(e)} 
        />
       
        </div>
@@ -32,14 +74,17 @@ export default function InfoPagoVCP() {
          <input class="form-control" id ="inputEmail"  placeholder='Correo electronico' className='forml'
          type="text"
          name="email"
+         required
+         onChange={(e) => handleChange(e)} 
        />
        </div> 
        <div>
          <label for="inputPhone" class="form-label">Celular:</label>
          <input class="form-control" id ="inputPhone"  placeholder='011 2222 2222' className='forml'
          type="number"
-         name="phone"
+         name="telefono"
          required
+         onChange={(e) => handleChange(e)} 
        />
      
        </div>
@@ -47,46 +92,53 @@ export default function InfoPagoVCP() {
          <label for="inputFecNac" class="form-label">Fecha de Nacimiento:</label>
          <input class="form-control" id ="inputFecNac" className='forml'
          type="date"
-         name="fecData"
+         name="nacimiento"
          required
+         onChange={(e) => handleChange(e)} 
        />
        </div>
        <div>
          <label for="inputFecEv" class="form-label">Fecha de salida:</label>
          <input class="form-control" id ="inputFecEv"  placeholder='xx/xx/xxxx' className='forml'
          type="date"
-         name="fecData"
+         name="fecsalida"
+         required
+         onChange={(e) => handleChange(e)} 
        />
        </div>
        <div>
          <label for="inputLocal" class="form-label">Lugar de destino:</label>
          <input class="form-control" id ="inputLocal"  placeholder='Ej, Mar del Plata, Florianopolis, etc' className='forml'
          type="text"
-         name="loc"
+         name="destino"
          required
+         onChange={(e) => handleChange(e)} 
        />
        </div> 
        <div>
          <label for="inputPerson" class="form-label">Cantidad de personas:</label>
          <input class="form-control" id ="inputPerson"  placeholder='Cantidad de personas' className='forml'
          type="number"
-         name="person"
+         name="cantpersonas"
          required
+         onChange={(e) => handleChange(e)} 
        />
        </div>
        <div>
        <label for="inputNoches" class="form-label">Cantidad de noches:</label>
             <input class="form-control" id ="inputNoches"  placeholder='Cantidad de noches' className='forml'
             type="number"
-            name="noches"
+            name="cantnoches"
             required
+            onChange={(e) => handleChange(e)} 
           />
           </div>
        <div>
          <label for="inputEv" class="form-label">Pedido adicional:</label>
          <input class="form-control" id ="inputEv"  placeholder='Media pensión, Excursiones, Hotel, etc.' className='forml'
          type="text"
-         name="evento"
+         name="pedidoadic"
+         onChange={(e) => handleChange(e)} 
        />
        </div>
        <br />
@@ -94,7 +146,7 @@ export default function InfoPagoVCP() {
        <div>
          <button class="btn btn-primary" type='submit'>Reservar</button>
        </div>
-       <input type="hidden" name="_next" value="http://localhost:3000/infopagosvcp" />
+       {/* <input type="hidden" name="_next" value="http://localhost:3000/infopagos" /> */}
 
        {/* <input type="hidden" name="_captcha" value="false" /> */}
      </form>
