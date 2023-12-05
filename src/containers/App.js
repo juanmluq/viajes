@@ -3,11 +3,12 @@ import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Nav from '../components/Nav.jsx';
 import Home from '../components/Home.jsx';
-import Menus from '../components/Menus.jsx';
-import Nosotros from "../components/Nosotros"
-import Presupuestar from "../components/Presupuestar"
-import Eventos from '../components/Eventos';
+import Packs from '../components/Packs.jsx';
+import Nosotros from "../components/Nosotros";
+import Presupuestar from "../components/Presupuestar";
+import Contacto from '../components/Contacto.jsx';
 import InfoPago from '../components/InfoPago';
+import InfoPagoVCP from '../components/InfoPagoVCP.jsx';
 
 function App() {
   
@@ -20,20 +21,24 @@ function App() {
         <Home/>
         </Route>
 
-      <Route path="/menus">
-        <Menus/>
+      <Route path="/packs">
+        <Packs/>
       </Route> 
       
-      <Route path="/nosotros"> 
+      <Route path="/condiciones"> 
         <Nosotros/>
-      </Route>
-
-      <Route path="/eventos"> 
-        <Eventos/>
       </Route>
 
       <Route path="/infopagos"> 
         <InfoPago/>
+      </Route>
+
+      <Route path="/infopagosvcp"> 
+        <InfoPagoVCP/>
+      </Route>
+
+      <Route path="/contacto"> 
+        <Contacto/>
       </Route>
 
       <Route path="/presupuestar"> 

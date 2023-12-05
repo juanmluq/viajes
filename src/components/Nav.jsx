@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
+
 import './Nav.css';
 
 function Nav() {
@@ -7,21 +8,14 @@ function Nav() {
     <nav className="nav nav-tabs" >
                     
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
+        <a class="nav-link " aria-current="page" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/menus">Menus</a>
+        <a class="nav-link" href="/packs">Salidas</a>
       </li>
+   
       <li class="nav-item">
-        <a class="nav-link" href="/nosotros">Nosotros</a>
-      </li>
-      
-      <li class="nav-item" >
-        <a class="nav-link" href="/eventos">Eventos</a>
-      </li>
-
-      <li class="nav-item" >
-        <a class="nav-link" href="/infopagos">Abonar</a>
+        <a class="nav-link" href="/contacto">Contacto</a>
       </li>
 
       <div className='navBtn'>  

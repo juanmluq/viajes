@@ -6,35 +6,82 @@ export default function Nosotros(){
     return(
         <div>
     <div className="nos">
-            <h3>Nosotros </h3>
+            <h3>CONDICIONES </h3>
             <h7>
-                Tu Evento Resuelto es un organización profesional.
-                <br />
-                •Puntualidad: Nuestro servicio de Pizza Party cuenta con personal incluido; cocineros y camareras. Los mismos se dirigen a su domicilio, empresa, dpto., country, salón, etc. con tiempo previo al horario programado para los invitados.
-                <br />
-                •Prolijidad: El Personal esta capacitado tanto en normas de salubridad como de cocina. Tenga la tranquilidad de que su lugar es entregado en las mismas condiciones en las cuales fue brindado en las manos de Tu Evento Resuelto.
-                <br />
-                •Actitud de Servicio: Los empleados se encargan de que sus invitados sean atendidos como corresponde, teniendo en cuenta el agrado y la conformidad de los mismos.
-                <br />
-                •Pulcritud: Se trasladan  productos frescos de primer nivel, manteniendo las condiciones de higiene. La materia prima llega al lugar para proceder a su elaboración, que es realizada a la vista de los invitados, utilizando su parrilla, para degustar a las brasas, o con nuestras planchas portátiles.
-                <br />
-                •El  Pizza Party más completo: Además de nuestra gran variedad de pizzas, contamos con servicios adicionales de calidad (Mesa Dulce, catering y más), lo que resuelve tu evento en un solo llamado haciendo de tu fiesta un verdadero éxito!!! 
-                <br />
-            </h7>
+<br />​
+
+* Alteraciones o modificaciones:
+<br />
+La presente organización de viajes se reserva el derecho por razones técnicas u operativas, de alterar total o parcialmente el ordenamiento diario y/o servicios que componen el tour, antes o durante la ejecución del mismo. Salvo condiciones expresas en contrario los hoteles podrán ser cambiados por otros de igual o mayor categoría dentro del mismo núcleo urbano sin cargo alguno para los pasajeros. Respecto de estas variaciones, el pasajero no tendrá derecho a indemnización alguna. Una vez comenzado el viaje, la suspensión, modificación o interrupción de los servicios por parte del pasajero por razones personales de cualquier índole no dará lugar a reclamo, reembolso o devolución alguna.
+<br />
+<br />
+
+* Responsabilidad:
+<br />
+La presente organización de viajes declara expresamente que actúa con carácter de intermediaria en la reserva o contratación de los distintos servicios vinculados e incluidos en el respectivo tour o reservación de servicios, hoteles, restaurantes, medios de transporte (aéreos y terrestres según corresponda) u otros prestadores. La organizacion no se responsabiliza por los hechos que se produzcan por caso fortuito o fuerza mayor, fenómenos climáticos o hechos que acontezcan antes o durante el desarrollo del tour que impidan, demoren o de cualquier modo obstaculicen la ejecución total o parcial de las prestaciones comprometidas, de conformidad con lo dispuesto por el Código Civil. Por consiguiente declina todo tipo de responsabilidad sobre daño, pérdidas, robos o perjuicios que pudieran sufrir las personas, sus bienes, cualquiera fueran las causas ajenas que lo originen. Tampoco se considera responsable por las modificaciones de horarios y/o cambios de vuelos resueltos unilateralmente por las líneas aéreas participantes.
+<br />
+<br />
+
+* Limitaciones al derecho de permanencia:
+<br />
+La presente organizacion de viajes se reserva el derecho de hacer que abandone el tour en cualquier punto del mismo todo pasajero cuya conducta, modo de obrar, estado de salud u otras razones graves provoque peligro o cause molestias a los restantes viajeros puedan malograr el éxito de la excursión o el normal desarrollo de la misma.
+<br />
+<br />
+
+* Documentación: 
+<br />
+La presente no se responsabiliza si por la falta de dicha documentación no se brindaren los servicios contratados, ni efectuará devoluciones de valores pagados por la misma causa. Es responsabilidad del viajero poseer en su poder todo lo necesario para su identificación personal, antes, durante y a la llegada del mismo o a su regreso al origen. Esto es sumamente importante cuando se trata de extranjeros, residentes, menores, etc. Mayor información será brindada por las líneas aéreas participantes y/o consulados respectivos.
+<br />
+<br />
+
+* Servicios y otros rubros no incluidos:
+<br />
+Extras, bebidas, lavado de ropa, propinas, tasas de embarque, tasas sobre servicios, IVA y otros impuestos, actuales y/o futuros, ni ningún otro servicio que no se encuentre indicado en los voucher respectivos, emitidos por la presente y entregados por la misma que intervino en la operación.
+<br />
+Estadías, comidas y/o gastos adicionales o perjuicios producidos por cancelaciones, demoras en las salidas o llegadas de los medios de transporte o por razones imprevistas ajenas a la empresa. Alimentación en ruta excepto aquellas que estén incluidas o programadas y especificadas. Los gastos e intereses en operaciones de crédito y/o tarjetas de pago. Cualquier gasto que realizara el pasajero si en viaje tuviera que alejarse más allá de los términos fijados por causas fortuitas o de fuerza mayor correrán por cuenta del pasajero sin derecho a reembolso o compensación alguna.
+<br />
+<br />
+
+* Los precios incluyen:
+<br />
+Alojamiento por la cantidad de noches especificadas y mencionadas en los itinerarios y/o vouchers, en hoteles especificados u otros de igual o mayor categoría, ocupando habitaciones según la elegida, con baño privado e impuestos. Régimen de comidas, según lo especificado en el voucher según se indique en cada oportunidad y lugar. Visitas y excursiones que se incluyan en el servicio adquirido y detalladas en el voucher, lo mismo que los traslados hasta y desde los aeropuertos, terminales, hoteles según se indique. La hotelería considera día completo el de llegada, no existiendo reclamos si las diferencias horarias acortan el período de alojamiento. Las habitaciones deben ser desocupadas a las 10:00 a.m. quedando a disposición del pasajero, las instalaciones del hotel y/o depósito de equipajes hasta la hora que el pasajero retire los mismos. Para la asignación de las habitaciones, las mismas se asignarán al arribo de los pasajeros en un todo de acuerdo a la adquirida y especificada en el voucher, según disponibilidad existente al momento del check-in. La diferencia que corresponda por cualquier cambio de categoría en la habitación asignada será abonada por el pasajero. Todas las habitaciones son de categoría standard, excepto que se especifique lo contrario en la documentación emitida. El pasajero podrá convenir con el operador local el cambio de los horarios de las excursiones incluidas, siempre que pueda satisfacerse su pedido, caso contrario, se ajustará a lo regular y programado. Para el caso de cualquier contratación de excursiones opcionales, las mismas son por cuenta y riesgo del pasajero al momento de contratarlas, no existiendo responsabilidad de la presente ni por la realización de la misma, ni por el monto abonado, ya que se entiende que es ajena a los servicios adquiridos y/o convenidos.
+<br />
+​<br />
+
+* Solicitudes y pagos:
+<br />
+El precio y/o reservaciones de los servicios que componen el tour quedan sujetos a modificaciones sin previo aviso cuando se produzcan alteraciones en los servicios, modificaciones en los costos, en los tipos de cambios previstos, por causas no imputables a las partes. Todos los impuestos pagados antes de la confirmación definitiva de los servicios son percibidos en concepto de reserva. La confirmación definitiva de servicios y precios se producirá con la emisión de los pasajes y/o vouchers y la facturación correspondiente. Las operaciones a crédito deberán satisfacer los requisitos propios fijados en las mismas. En su defecto el interesado deberá cumplir el pago de saldos en los plazos y condiciones establecidos en la contratación.
+<br />
+<br />
+
+* Inscripciones:
+<br />
+Las mismas serán recibidas mediante el pago de una seña cuyo valor se ajustará en cada caso. Operaciones regulares: un mínimo de 50% de seña del precio convenido. En el plazo de vencimiento deberá cancelarse la totalidad del precio, momento en el cual se emitirá la documentación respectiva. Operaciones Charter: Se informará en cada caso el monto de seña y el vencimiento de pago total, momento en el cual se abonará el saldo respectivo y se entregará la documentación correspondiente.
+<br />
+<br />
+
+* Cancelaciones:
+<br />
+Si la cancelación se produce 30 días antes de la salida, el cargo será del 50%. Para el caso de 14 días, hasta la fecha de salida, o NO-SHOW cualquiera sea la causa o razón, 100% de retención. La presente estudiará cada caso y sus antecedentes y podrá reverse si los proveedores así lo consideren. La decisión será notificada no antes de los 30 días de producido el hecho. Este trámite no dará derecho alguno a reclamo posterior, aceptando el pasajero los montos fijados de retención y la fecha convenida para realizar el reintegro si correspondiera.
+<br />
+<br />
+
+* Equipaje: 
+<br />
+No será objeto de contrato de transporte entendiendo que el pasajero conserva siempre consigo el mismo por su cuenta y cargo, cualquiera sea el lugar donde es transportado. La presente no se verá obligado a responder contractualmente por la pérdida o daños que pudieren sufrir los mismos.
+<br />
+<br />
+
+* Líneas Aéreas Participantes:
+<br />
+El ticket en poder del pasajero será el contrato de transporte entre el pasajero y el transportador. El billete de pasaje constituirá el único compromiso entre la línea aérea y el pasajero. La presente no se considera responsable por ningún acto u omisión que pueda ocurrir con los pasajeros cuando los mismos se encuentren a bordo de las aeronaves. La línea aérea respectiva y la presente organización se reservan el derecho de modificar horarios y/o cambios de vuelo si las condiciones meteorológicas o razones de fuerza mayor así lo exigieran. En el caso de Transporte No Regular o Charter rige lo estipulado en el punto antes mencionado. Sin perjuicio de ello en estos casos solo se reintegrará la proporción del precio correspondiente a la parte terrestre (hotelería, pensión, excursiones) que determine el Organizador según la modalidad y condiciones de las cláusulas antes mencionadas.
+          </h7>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <br />
         <br />
 
         <div className='fondodos'>
-        <a style={{ width:"auto"}} href="https://api.whatsapp.com/send?phone=+5491166635478">  
+        <a style={{ width:"auto"}} href="https://api.whatsapp.com/send?phone=+5491127381642">  
 
         <div className='piepag'>
           Whatsapp
@@ -48,15 +95,15 @@ export default function Nosotros(){
   <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
   <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
 </svg>
-      <div>tueventoresuelto1@gmail.com
+      <div>eventosant@gmail.com
       </div>
         </div>
-          <a href="https://www.instagram.com/cateringeventos_/">
+          <a href="https://web.facebook.com/profile.php?id=100064332926542">
         <div className='piepag'>
-        Instagram
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-          </svg>
+        Facebook
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg>
       </div>
           </a>
       </div>

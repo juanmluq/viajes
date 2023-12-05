@@ -1,5 +1,9 @@
 .nos{
     padding: 4%;
+    background-color: rgba(240, 248, 255, 0.568);
+    color: black;
+    margin: 3%;
+    
 }
 
 @media(max-width: 550px){

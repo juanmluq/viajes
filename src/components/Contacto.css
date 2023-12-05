@@ -1,19 +1,28 @@
-
- .pres {
-  position: relative;
-  border: 1px solid var(--border-color);
-  border-radius: 1rem;
-
-  background-color: var(--card-bkg-color);
-  color: white;
-
-  padding: 0.25rem;
-  margin: 5% 10%;
-  width: auto;
-
-  display: flex;
-  flex-direction: column;
+.contact {
+  margin-top: 4%;
+  background-color: rgba(10, 10, 10, 0.651);
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  border: 1px solid white;
+  padding-bottom: 5px;
 }
+.forml{
+  width: 100%;
+}
+
+@media (max-width: 550px){
+  .forml {
+    font-size: x-small;
+  }
+}
+
+@media (max-width: 550px){
+  .contact {
+    font-size: x-small;
+  }
+}
+
 .presDos {
   position: relative;
   border: 1px solid var(--border-color);
@@ -30,11 +39,11 @@
   flex-direction: column;
 }
 
-@media (max_width: 550px){
+/* @media (max-width: 550px){
   .presDos{
     width: 100%;
   }
-}
+} */
 
  .info{
  padding: 2%;

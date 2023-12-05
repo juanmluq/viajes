@@ -1,8 +1,8 @@
 .app{
-  background-image: url("https://static.vecteezy.com/system/resources/previews/002/549/471/non_2x/elegant-lilac-background-free-vector.jpg");
+  background-attachment: fixed;
+  background-image: url("https://feriavirtual.wdfiles.com/local--files/cuidado-del-agua/isla.gif");
   background-repeat: no-repeat;
   background-size: cover;
- 
 }
 
 .header{

@@ -3,22 +3,22 @@
   display: flex;
   position: relative;
   justify-content: center;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
-@media(max-width: 550px){ 
-  .home{    
+@media(max-width: 550px){
+  .home, .piePagin{
     font-size:x-small;
     }
 }
 
 .marca{
   display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: start;
-  width: 30%;
-
+  position: absolute;
+  left: 10px;
+  width: 52%;
+  z-index: 9999;
+  margin-top: 30px;
 }
 
 .imgLog{
@@ -30,8 +30,9 @@
 }
 
 .imagens{
-  margin-top: -29%;
-  opacity: 0.2;
+  /* margin-top: -29%; */
+  /* opacity: 0.9; */
+  width: -webkit-fill-available;
   border-bottom: groove 15px white;
 }
 
@@ -43,7 +44,7 @@
     background: -webkit-linear-gradient(#fff,rgb(132 255 255 / 67%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: rgb(204, 172, 172);  
+    color: rgb(204, 172, 172);
     animation: 2s linear 0s infinite alternate rise ;
     font-family: Always Smile Normal
   }
@@ -53,7 +54,7 @@
     position: relative;
     justify-content: center;
     color: rgb(179, 193, 206);
-    background-color: #90449591;
+    background-color: #225dc791;
     padding: 3%;
   }
 
@@ -66,27 +67,18 @@
     border-radius: 20% / 10% 10%;
     margin: 1%;
     width: 25%;
-    padding: 1%;   
+    padding: 1%;
   }
 
-.fondodos{
- 
-  background-color: #000000d6;
-  padding: 20px;
-  display: flex;
-  position: relative;
-  justify-content: center;
-}
-
-.cajaPlatos{
+.cajaDestinos{
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-    color: antiquewhite;
+    color: rgb(15, 41, 128);
   }
 
-  .platos{
+  .destinos{
     display: flex;
     position: relative;
     justify-content: center;
@@ -101,29 +93,22 @@
     display:contents;
     position: relative;
     align-items: center;
-    
+
 }
 
 .tb{
   width: 25% ;
   padding: 1%;
+  border: double;
 }
 
-.tbdos{
-  width: 22% ;
-  padding: 1%;
+.piePagin{
+  background-color: #007bff85;
+  color: #fff;
+  font-weight: 500;
+  border-top: 3px solid #007bff;
 }
 
-.piepag{
-  display: flex;
-  position: relative;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   padding: 5px;
-   flex-direction: column;
-}
-      
 
   @keyframes rise {
         from {
@@ -133,7 +118,7 @@
           transform: translateZ(2px);
         }
       }
-     
+
   @keyframes trasladarx {
         from {
           transform: perspective(100px) translateX(500px)
@@ -142,51 +127,46 @@
           transform: translateX(-500px);
         }
       }
- 
-          
-  @media(max-width: 800px){ 
-            .bienvenido{    
+
+
+  @media(max-width: 800px){
+            .bienvenido{
               font-size:x-small;
               }
             }
-            @media(max-width: 600px){ 
-              .bienvenido{    
+            @media(max-width: 600px){
+              .bienvenido{
                 flex-direction: column;
                 }
               }
-              @media(max-width: 600px){ 
-                .subbienv{    
+              @media(max-width: 600px){
+                .subbienv{
                   width: 90%;
                   margin-left: 5%;
                   }
                 }
-              
-        
-  @media(max-width: 800px){ 
-              h2, h3{    
+
+
+  @media(max-width: 800px){
+              h2, h3{
                 font-size:x-large;
               }
               }
-        
-  @media(max-width: 440px){ 
-                h2, h3{    
+
+  @media(max-width: 440px){
+                h2, h3{
                   font-size:medium;
                   }
                 }
-        
+
 @media(max-width: 440px){
                   h1{
                     font-size: xx-large;
                   }
                 }
 
-      @media(max-width: 550px) {
-                  .fondodos{
-                    font-size: x-small;
-                  }
-                }
-                @media(max-width: 440px){
-                  h6{
-                    display: none;
-                  }
-                }
+@media(max-width: 440px){
+  h6{
+      display: none;
+    }
+  }
