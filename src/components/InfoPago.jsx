@@ -45,6 +45,8 @@ function handleSubmit(e) {
       cantnoches:"",
       pedidoadic:""
   })
+  window.location.reload()
+
   //  history.push("/home") //cuando termine de hacer lo anterior llevame al home. El history.push  redirige
 }
   return (
