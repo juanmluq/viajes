@@ -1,13 +1,53 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import './Presupuestar.css';
 import { BsTelephoneInbound, BsWhatsapp, BsFacebook, BsInstagram, BsFillPhoneVibrateFill  } from "react-icons/bs";
 import { BiMailSend } from "react-icons/bi";
 import { useHistory } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-
+import { postPasajeros } from "./actions/index";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Pres () {
   const history = useHistory()
+  const dispatch = useDispatch()
+  const [ input, setInput ] = useState({//aca uso el input para guardar los datos que cargo en la pagina
+      name:"",
+      email:"",
+      telefono:"",
+      nacimiento:"xx/xx/xxxx",
+      fecsalida:"",
+      destino:"",
+      cantpersonas:"",
+      cantnoches:"",
+      pedidoadic:""
+      
+})
+
+function handleChange(e){
+  setInput({ 
+      ...input,
+      [e.target.name] : e.target.value
+  })
+  console.log(input) //con esto veo en consola que se va cargando en el input
+}
+
+function handleSubmit(e) {
+  e.preventDefault();
+  console.log(input)
+  dispatch(postPasajeros(input))
+  alert("Formulario enviado. Ya puede abonar!")
+  setInput({
+    name:"",
+      email:"",
+      telefono:"",
+      nacimiento:"xx/xx/xxxx",
+      fecsalida:"",
+      destino:"",
+      cantpersonas:"",
+      cantnoches:"",
+      pedidoadic:""
+  })
+  window.location.reload()
+}
 
     return (
       <div>
@@ -16,71 +56,76 @@ export default function Pres () {
         <br />
         <h1>Presupuestar</h1>
         
-        <form method='POST' action='https://formsubmit.co/eventosant@gmail.com' >
-          <div>
-            <input class="form-control" id ="inputName"  placeholder='Nombre y apellido' className='forml'
-            type="text"
-            name="name"
-            required
-          />
-         
-          </div>
-          <div>
-            <input class="form-control" id ="inputEmail"  placeholder='Correo electronico' className='forml'
-            type="text"
-            name="email"
-            required
-          />
-          </div> 
-          <div>
-            <input class="form-control" id ="inputPhone"  placeholder='Celular: 011 2222 2222' className='forml'
-            type="number"
-            name="phone"
-            required
-          />        
-          </div>
-          <div>
-            <input class="form-control" id ="inputFecEv"  placeholder='Fecha de salida: xx/xx/xxxx' className='forml'
-            type="date"
-            name="fecData"
-          />
-          </div>
-          <div>
-            <input class="form-control" id ="inputLocal"  placeholder='Lugar de destino: Ej, Mar del Plata, Florianopolis, etc' className='forml'
-            type="text"
-            name="loc"
-            required
-          />
-          </div> 
-          <div>
-            <input class="form-control" id ="inputPerson"  placeholder='Cantidad de personas' className='forml'
-            type="number"
-            name="person"
-            required
-          />
-          </div>
-          <div>
+        <form onSubmit={(e) => handleSubmit(e)} >
+       <div>
+         <input class="form-control" id ="inputName"  placeholder='Nombre' className='forml'
+         type="text"
+         name="name"
+         required
+         onChange={(e) => handleChange(e)} 
+       />
+      
+       </div>
+       <div>
+         <input class="form-control" id ="inputEmail"  placeholder='Correo electronico' className='forml'
+         type="text"
+         name="email"
+         required
+         onChange={(e) => handleChange(e)} 
+       />
+       </div> 
+       <div>
+         <input class="form-control" id ="inputPhone"  placeholder='Celular' className='forml'
+         type="number"
+         name="telefono"
+         required
+         onChange={(e) => handleChange(e)} 
+       /> 
+       </div>
+       <div>
+         <input class="form-control" id ="inputFecEv"  placeholder='fecha de salida' className='forml'
+         type="text"
+         name="fecsalida"
+         required
+         onChange={(e) => handleChange(e)} 
+       />
+       </div>
+       <div>
+         <input class="form-control" id ="inputLocal"  placeholder='Lugar de destino' className='forml'
+         type="text"
+         name="destino"
+         required
+         onChange={(e) => handleChange(e)} 
+       />
+       </div> 
+       <div>
+         <input class="form-control" id ="inputPerson"  placeholder='Cantidad de personas' className='forml'
+         type="number"
+         name="cantpersonas"
+         required
+         onChange={(e) => handleChange(e)} 
+       />
+       </div>
+       <div>
             <input class="form-control" id ="inputNoches"  placeholder='Cantidad de noches' className='forml'
             type="number"
-            name="noches"
+            name="cantnoches"
             required
+            onChange={(e) => handleChange(e)} 
           />
           </div>
-          <div>
-            <input class="form-control" id ="inputEv"  placeholder='Pedido adicional: Comidas, Excursiones, etc.' className='forml'
-            type="text"
-            name="evento"
-            required
-          />
-          </div>
-          <br />
-
-          <div>
-            <button class="btn btn-primary" type='submit'>Presupuestar</button>
-          </div>
-          <input type="hidden" name="_captcha" value="false" />
-
-        </form>
+       <div>
+         <input class="form-control" id ="inputEv"  placeholder='Pedido adicional: Media pensión, Excursiones, Hotel, etc.' className='forml'
+         type="text"
+         name="pedidoadic"
+         onChange={(e) => handleChange(e)} 
+       />
+       </div>
+       <div>
+         <button style={{marginTop:"4px"}} class="btn btn-primary" type='submit'>Consultar</button>
+       </div>
+      
+     </form>
           <div className='info'>
 
               Una vez enviado el formulario, si ya le confirmamos disponibilidad puede abonar 
