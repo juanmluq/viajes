@@ -34,7 +34,7 @@ function handleSubmit(e) {
   e.preventDefault();
   console.log(input)
   dispatch(postPasajeros(input))
-  alert("Formulario enviado. Ya puede abonar!")
+  alert("En breve responderemos su consulta!")
   setInput({
     name:"",
       email:"",

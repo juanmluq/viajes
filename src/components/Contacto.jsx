@@ -95,9 +95,8 @@ export default function Contacto () {
             required
           />
           </div>
-          <br />
           <div>
-            <button class="btn btn-primary" type='submit'>Consultar</button>
+            <button style={{marginTop:"6px"}} class="btn btn-primary" type='submit'>Consultar</button>
           </div>
           {/* <input type="hidden" name="_next" value="http://localhost:3000/infopagos" /> */}
 
