@@ -33,7 +33,7 @@ function handleSubmit(e) {
   e.preventDefault();
   console.log(input)
   dispatch(postPasajeros(input))
-  alert("Formulario enviado!!")
+  alert("Formulario enviado. Ya puede abonar!")
   setInput({
     name:"",
       email:"",
