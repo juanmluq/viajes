@@ -10,8 +10,7 @@ import Contacto from '../components/Contacto.jsx';
 import InfoPago from '../components/InfoPago';
 import InfoPagoVCP from '../components/InfoPagoVCP.jsx';
 
-function App() {
-  
+function App() {  
   return (
     <div className="app">
       <Nav/>
