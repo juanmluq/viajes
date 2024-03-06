@@ -5,13 +5,6 @@
   justify-content: center;
   flex-direction: column;
 }
-
-@media(max-width: 550px){
-  .home, .piePagin{
-    font-size:x-small;
-    }
-}
-
 .marca{
   display: flex;
   position: absolute;
@@ -20,56 +13,46 @@
   z-index: 9999;
   margin-top: 30px;
 }
-
 .imgLog{
   width: 30%;
 }
-
 .btns{
   width: 20%;
 }
-
 .imagens{
-  /* margin-top: -29%; */
-  /* opacity: 0.9; */
   width: -webkit-fill-available;
   border-bottom: groove 15px white;
 }
-
-
-  .texto {
-    display: flex;
-    position: relative;
-    padding-left: 3%;
-    background: -webkit-linear-gradient(#fff,rgb(132 255 255 / 67%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: rgb(204, 172, 172);
-    animation: 2s linear 0s infinite alternate rise ;
-    font-family: Always Smile Normal
-  }
-
-  .bienvenido{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    color: rgb(179, 193, 206);
-    background-color: #225dc791;
-    padding: 3%;
-  }
-
-  .subbienv{
-    display: flex;
-    position: relative;
-    align-items: center;
-    flex-direction: column;
-    border: outset;
-    border-radius: 20% / 10% 10%;
-    margin: 1%;
-    width: 25%;
-    padding: 1%;
-  }
-
+.texto {
+  display: flex;
+  position: relative;
+  padding-left: 3%;
+  background: -webkit-linear-gradient(#fff,rgb(132 255 255 / 67%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: rgb(204, 172, 172);
+  animation: 2s linear 0s infinite alternate rise ;
+  font-family: Always Smile Normal
+}
+.bienvenido{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  color: rgb(179, 193, 206);
+  background-color: #225dc791;
+  padding: 3%;
+}
+.subbienv{
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  border: outset;
+  border-radius: 20% / 10% 10%;
+  margin: 1%;
+  width: 25%;
+  padding: 1%;
+}
 .cajaDestinos{
     display: flex;
     position: relative;
@@ -77,31 +60,24 @@
     align-items: center;
     color: rgb(15, 41, 128);
   }
-
-  .destinos{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    /* animation: 10s linear 0s infinite alternate trasladarx ; */
-
-  }
-
+.destinos{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
 .dospag{
     display:contents;
     position: relative;
     align-items: center;
-
 }
-
 .tb{
   width: 25% ;
   padding: 1%;
   border: double;
 }
-
 .piePagin{
   background-color: #007bff85;
   color: #fff;
@@ -109,64 +85,61 @@
   border-top: 3px solid #007bff;
 }
 
+@keyframes rise {
+  from {
+    transform: perspective(100px) translateZ(1px)
+  }
+  to {
+    transform: translateZ(2px);
+  }
+}
+@keyframes trasladarx {
+  from {
+    transform: perspective(100px) translateX(500px)
+  }
+  to {
+    transform: translateX(-500px);
+  }
+}
 
-  @keyframes rise {
-        from {
-          transform: perspective(100px) translateZ(1px)
-        }
-        to {
-          transform: translateZ(2px);
-        }
-      }
-
-  @keyframes trasladarx {
-        from {
-          transform: perspective(100px) translateX(500px)
-        }
-        to {
-          transform: translateX(-500px);
-        }
-      }
-
-
-  @media(max-width: 800px){
-            .bienvenido{
-              font-size:x-small;
-              }
-            }
-            @media(max-width: 600px){
-              .bienvenido{
-                flex-direction: column;
-                }
-              }
-              @media(max-width: 600px){
-                .subbienv{
-                  width: 90%;
-                  margin-left: 5%;
-                  }
-                }
-
-
-  @media(max-width: 800px){
-              h2, h3{
-                font-size:x-large;
-              }
-              }
-
-  @media(max-width: 440px){
-                h2, h3{
-                  font-size:medium;
-                  }
-                }
-
+@media(max-width: 800px){
+  .bienvenido{
+    font-size:x-small;
+  }
+}
+@media(max-width: 800px){
+  h2, h3{
+    font-size:x-large;
+  }
+}
+@media(max-width: 600px){
+  .bienvenido{
+    flex-direction: column;
+  }
+}
+@media(max-width: 600px){
+  .subbienv{
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+@media(max-width: 550px){
+  .home, .piePagin{
+    font-size:x-small;
+    }
+}
 @media(max-width: 440px){
-                  h1{
-                    font-size: xx-large;
-                  }
-                }
-
+  h2, h3{
+    font-size:medium;
+    }
+}
+@media(max-width: 440px){
+  h1{
+    font-size: xx-large;
+  }
+}
 @media(max-width: 440px){
   h6{
-      display: none;
-    }
+    display: none;
   }
+}
