@@ -4,10 +4,7 @@ import imglog from "../img/logoviaje.png";
 import { BsTelephoneInbound, BsWhatsapp, BsFacebook, BsInstagram, BsFillPhoneVibrateFill  } from "react-icons/bs";
 import { BiMailSend } from "react-icons/bi";
 
-
 export default function Home() {
-
-
   return (
     <div>
       <img className='marca' src={imglog} alt="logo" />
