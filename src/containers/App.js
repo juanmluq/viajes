@@ -15,36 +15,28 @@ function App() {
   return (
     <div className="app">
       <Nav/>
-
       <Switch >
-      <Route exact path="/"> 
-        <Home/>
+        <Route exact path="/"> 
+          <Home/>
         </Route>
-
-      <Route path="/packs">
-        <Packs/>
-      </Route> 
-      
-      <Route path="/condiciones"> 
-        <Nosotros/>
-      </Route>
-
-      <Route path="/infopagos"> 
-        <InfoPago/>
-      </Route>
-
-      <Route path="/infopagosvcp"> 
-        <InfoPagoVCP/>
-      </Route>
-
-      <Route path="/contacto"> 
-        <Contacto/>
-      </Route>
-
-      <Route path="/presupuestar"> 
-        <Presupuestar/>
-      </Route>
-
+        <Route path="/packs">
+          <Packs/>
+        </Route> 
+        <Route path="/condiciones"> 
+          <Nosotros/>
+        </Route>
+        <Route path="/infopagos"> 
+          <InfoPago/>
+        </Route>
+        <Route path="/infopagosvcp"> 
+          <InfoPagoVCP/>
+        </Route>
+        <Route path="/contacto"> 
+          <Contacto/>
+        </Route>
+        <Route path="/presupuestar"> 
+          <Presupuestar/>
+        </Route>
       </Switch>
     </div>
   );
