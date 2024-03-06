@@ -12,17 +12,13 @@ function rootReducer (state= initialState, action){
                 pasajeros: action.payload,
                 allPasajeros: action.payload
             }
-
-            case "POST_PASAJEROS" :
-                return {
-                    ...state,
-                    
-                }
-    
-                default:
-                return state;
+        case "POST_PASAJEROS" :
+            return {
+                ...state,      
+            }
+        default:
+            return state;
     }
-
 }
 
 export default rootReducer;
