@@ -1,20 +1,18 @@
 .nos{
-    padding: 4%;
-    background-color: rgba(240, 248, 255, 0.568);
-    color: black;
-    margin: 3%;
-    
+  padding: 4%;
+  background-color: rgba(240, 248, 255, 0.568);
+  color: black;
+  margin: 3%;
 }
 
 @media(max-width: 550px){
-.nos{
+  .nos{
     font-size: x-small;
-}}
-
+  }
+}
 
 @media(max-width: 550px){
-    h1{
-        font-size: x-large;
-    }}
-
-    
+  h1{
+    font-size: x-large;
+  }
+}
