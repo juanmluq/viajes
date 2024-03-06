@@ -10,10 +10,9 @@ export function getPasajeros(){
     }
 }
 
-
 export function postPasajeros(payload){
      return async function(dispatch) {
-        const response= await axios.post("https://backpasajeros-production.up.railway.app/pasajero", payload); //axios.post dispara una ruta de post
+        const response= await axios.post("https://backpasajeros-production.up.railway.app/pasajero", payload);
         return response
      }
 }
