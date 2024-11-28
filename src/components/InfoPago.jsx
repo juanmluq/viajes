@@ -175,7 +175,7 @@ export default function InfoPago() {
           <h4>Info Salidas</h4>
           Salidas diarias a playas Argentinas:
           <br />
-          Salida desde: Terminal Liniers, Terminal Avellaneda y Llavallol (Consultar otros puntos de arribo).
+          Salida desde: Terminal Liniers, Llavallol y Cruce Varela (Consultar otros puntos de arribo).
           <br />
           Horario estimado de comienzo del recorrido: 06.00 am (segun el punto de partida puede variar).
           <br />
