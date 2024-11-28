@@ -23,9 +23,9 @@ export default function Packs() {
             <a href="https://www.aparthotelmonaco.com.ar/">Hotel Monaco</a>  
             PRECIOS POR PERSONA:
             <br />
-            Diciembre y marzo: $175.000 (base doble /triple).
+            Diciembre y marzo: $200.000 (base doble /triple).
             <br />
-            Enero y febrero: $195.000 (base doble / triple).
+            Enero y febrero: $210.000 (base doble / triple).
             <br />
             <Link to="/infopagos">Reservar</Link> 
           </div>
