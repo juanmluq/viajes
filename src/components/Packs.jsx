@@ -23,11 +23,9 @@ export default function Packs() {
             <a href="https://www.aparthotelmonaco.com.ar/">Hotel Monaco</a>  
             PRECIOS POR PERSONA:
             <br />
-            Diciembre y marzo:
+            Diciembre y marzo: $175.000 (base doble /triple).
             <br />
-            $78.000 (base doble) / $74.000 (triple) / $69.000 (cuadruple). 
-            <br />
-            Enero y febrero: $84.000 (base doble) / $79.000 (triple) / $72.000 (cuadruple).
+            Enero y febrero: $195.000 (base doble / triple).
             <br />
             <Link to="/infopagos">Reservar</Link> 
           </div>
@@ -36,11 +34,10 @@ export default function Packs() {
             <a href="https://www.mardeajo.com/hotelmunich">Hotel Munich</a>          
             PRECIOS POR PERSONA:
             <br />
-            Marzo: 
+            Diciembre y marzo: $165.000 (base doble /triple).
             <br />
-            $72.000 (base doble) / $68.000 (triple) / $63.000 (cuadruple).
+            Enero y febrero: $190.000 (base doble / triple).
             <br />
-            Enero y febrero: $79.000 (base doble) / $75.000 (triple) / $69.000 (cuadruple).
             <br />
             <Link to="/infopagos">Reservar</Link> 
           </div>
@@ -48,12 +45,12 @@ export default function Packs() {
         <div className="centradoPacks">
           <div className="imgPacks">
             <img src={sanber} alt="imgSanber" />
-            <a href="https://www.coloresdesanbernardo.com.ar/">Hotel Colores</a>
+            <a href="https://www.hotellaargentina.com.ar/">Hotel La Argentina</a>
             PRECIOS POR PERSONA:
             <br />
-            Diciembre y marzo: $83.000 (base doble) / $77.000 (triple).
+            Diciembre y marzo: $200.000 (base doble /triple).
             <br />
-            Enero y febrero: $92.000 (base doble) / $86.000 (triple).
+            Enero y febrero: PROMO $210.000 (base doble / triple).
             <br />
             <Link to="/infopagos">Reservar</Link> 
           </div>
@@ -62,9 +59,9 @@ export default function Packs() {
             <a href="https://www.hotelaldeamarina.com.ar">Hotel Aldea Marina</a>
             PRECIOS POR PERSONA:
             <br />
-            Diciembre y marzo: $78.000 (base doble y base triple). 
+            Diciembre y marzo: $175.000 (base doble / base triple). 
             <br />
-            Enero y febrero: $85.000 (base doble y base triple).
+            Enero y febrero: $205.000 (base doble / base triple).
             <br />
             <Link to="/infopagos">Reservar</Link> 
           </div>
@@ -75,7 +72,7 @@ export default function Packs() {
             <a href="https://www.hotelcieloazul.com.ar">Hotel Cielo Azul</a> 
             PRECIOS POR PERSONA:
             <br />
-            $89.000 (base doble y base triple).
+            $220.000 (base doble / base triple).
             <br />
             <br />         
             <Link to="/infopagos">Reservar</Link> 
@@ -85,13 +82,13 @@ export default function Packs() {
             <a href="https://el-practico.hotels-villa-carlos-paz.com/es/">Hotel El Practico</a>
             PRECIOS POR PERSONA:
             <br />
-            $104.000 (base doble) / $92.000 (triple).
+            $160.000 (base doble / triple).
             <br />
             <br />
             <Link to="/infopagosvcp">Reservar</Link> 
           </div>
         </div>
-          <div>Precios verano 2023 - 2024 a partir de base doble (2 personas minimo). En base single es un 50% adicional aproximadamente.</div>
+          <div>Precios verano 2024 - 2025 a partir de base doble (2 personas minimo). En base single es un 50% adicional aproximadamente.</div>
           <br />
         </div>
         <br />
@@ -108,7 +105,7 @@ export default function Packs() {
         El alojamiento es en base a la disponibilidad que tengamos al momento de reservar. En su mayoría los alojamientos cuentan con recepción 24 horas y conexión Wi-Fi gratuita en las zonas comunes. Las habitaciones son dobles, triples y cuádruples para 2, 3 y 4 personas y cuentan con ventilador, TV por cable y baño privado. Ademas los alojamientos en general tienen zona de estar con TV por cable y baño.
         <br />
         <br />
-        Menores de 1 y 2 años solo abonan un seguro de $1000 aprox.
+        Menores de 1 y 2 años solo abonan un seguro de $6000 aprox.
         <br />
         Tarifas sujetas a modificación sin previo aviso. Abonando el total del viaje se congela el precio.
         <br />
