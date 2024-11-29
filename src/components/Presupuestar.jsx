@@ -126,7 +126,6 @@ export default function Pres () {
           la reserva. Si todavia no le confirmamos disponibilidad puede 
           contactarse por telefono, whatsapp o mail. 
           La reserva queda confirmada al abonar el 50% del valor total.
-          En la sección Reservas puede obtener info de las distintas formas de pago.
         </div>
       </div>
       <br />
