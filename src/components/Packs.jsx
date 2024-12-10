@@ -1,11 +1,12 @@
 import React from "react";
 import './Packs.css';
-import sanber from "../img/sanber.jpg"
-import santateresita from "../img/santateresita.jpg"
-import mardel from "../img/mardel.jpg"
-import gesell from "../img/gesell.jpg"
-import carlospaz from "../img/carlospaz.jpg"
-import mardeajo from "../img/mardeajo.jpg"
+import sanber from "../img/sanber.jpg";
+import santateresita from "../img/santateresita.jpg";
+import mardel from "../img/mardel.jpg";
+import gesell from "../img/gesell.jpg";
+import carlospaz from "../img/carlospaz.jpg";
+import mardeajo from "../img/mardeajo.jpg";
+import floripa from "../img/floripa.jpg";
 import { BsTelephoneInbound, BsWhatsapp, BsFacebook, BsInstagram, BsFillPhoneVibrateFill  } from "react-icons/bs";
 import { BiMailSend } from "react-icons/bi";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
@@ -27,7 +28,7 @@ export default function Packs() {
             <br />
             Enero y febrero: $210.000 (base doble / triple).
             <br />
-            <Link to="/infopagos">Reservar</Link> 
+            <Link to="/infopagos/1">Más info</Link> 
           </div>
           <div className="imgPacks">
             <img src={mardeajo} alt="imgMardeAjo" />
@@ -39,7 +40,7 @@ export default function Packs() {
             Enero y febrero: $190.000 (base doble / triple).
             <br />
             <br />
-            <Link to="/infopagos">Reservar</Link> 
+            <Link to="/infopagos/2">Más info</Link> 
           </div>
         </div>
         <div className="centradoPacks">
@@ -52,7 +53,7 @@ export default function Packs() {
             <br />
             Enero y febrero: PROMO $210.000 (base doble / triple).
             <br />
-            <Link to="/infopagos">Reservar</Link> 
+            <Link to="/infopagos/3">Más info</Link> 
           </div>
           <div className="imgPacks">
             <img src={gesell} alt="imgGesell" />
@@ -63,7 +64,7 @@ export default function Packs() {
             <br />
             Enero y febrero: $205.000 (base doble / base triple).
             <br />
-            <Link to="/infopagos">Reservar</Link> 
+            <Link to="/infopagos/4">Más info</Link> 
           </div>
         </div>
         <div className="centradoPacks">
@@ -75,7 +76,7 @@ export default function Packs() {
             $220.000 (base doble / base triple).
             <br />
             <br />         
-            <Link to="/infopagos">Reservar</Link> 
+            <Link to="/infopagos/5">Más info</Link> 
           </div>
           <div className="imgPacks">
             <img src={carlospaz} alt="imgCarloPaz" />
@@ -85,9 +86,23 @@ export default function Packs() {
             $160.000 (base doble / triple).
             <br />
             <br />
-            <Link to="/infopagosvcp">Reservar</Link> 
+            <Link to="/infopagos/6" >Más info</Link> 
           </div>
         </div>
+        <div className="centradoPacks">
+          <div className="imgPacks">
+            <img src={floripa} alt="imgFloripa" />
+            <a href="https://luizinhoimoveis.com/">Posada Luiziño</a>
+            PRECIOS POR PERSONA:
+            <br />
+            u$d 490 (base cuadruple).
+            <br />
+            <br />
+            <Link to="/infopagos/7">Más info</Link> 
+          </div>
+        </div>
+
+
           <div>Precios verano 2024 - 2025 a partir de base doble (2 personas minimo). En base single es un 50% adicional aproximadamente.</div>
           <br />
         </div>
