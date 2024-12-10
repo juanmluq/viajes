@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import { useHistory  } from "react-router-dom";
+import React from "react";
 import "./InfoPago.css";
-import { postPasajeros } from "./actions/index";
 import { useDispatch } from "react-redux";
 import { BsWhatsapp, BsFacebook, BsInstagram, BsFillPhoneVibrateFill  } from "react-icons/bs";
 import { BiMailSend } from "react-icons/bi";
+import qrmp from "../img/qrmp.png"
 import sanber from "../img/sanber.jpg";
 import santateresita from "../img/santateresita.jpg";
 import mardel from "../img/mardel.jpg";
@@ -12,11 +11,16 @@ import gesell from "../img/gesell.jpg";
 import carlospaz from "../img/carlospaz.jpg";
 import mardeajo from "../img/mardeajo.jpg";
 import floripa from "../img/floripa.jpg";
+import { useParams } from "react-router-dom/cjs/react-router-dom";
 
-export default function InfoPago(id) {
+export default function Abonar() {
   const dispatch = useDispatch();
-  const history = useHistory();
+  const { id } = useParams();
+  const { cantpersonas } = useParams();
+  const { prectotal } = useParams();
+  const { fecsalida } = useParams();
   let packPorId = undefined;
+  console.log(id);
    const packsArmados = [
     {id:1, nombre: "Santa Teresita", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: santateresita ,dias: "5 días 4 noches", descripcion: "Bus semi cama + alojamiento en hotel Monaco con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:210000}, {cant:2, fecha:"marzo", cambio:"$",precio:200000}]},
     {id:2, nombre: "Mar de Ajó", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ",imagen: mardeajo, dias: "4 días 3 noches", descripcion: "Bus semi cama + alojamiento en hotel Munich con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:190000}, {cant:2, fecha:"marzo" , cambio:"$", precio:165000}]},
@@ -24,7 +28,7 @@ export default function InfoPago(id) {
     {id:4, nombre: "Villa Gessel", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: gesell, dias: "4 días 3 noches", descripcion: "Bus semi cama + alojamiento en hotel Aldea Marina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:205000}, {cant:2, fecha:"marzo" , cambio:"$", precio:175000}]},
     {id:5, nombre: "Mar del Plata", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: mardel, dias: "5 días 4 noches", descripcion: "Bus semi cama + alojamiento en hotel Cielo Azul con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:220000}, {cant:2, fecha:"marzo" , cambio:"$", precio:220000}]},
     {id:6, nombre: "Villa Carlos Paz", salidas:"Todos los dias de noviembre y diciembre de 2024, enero, febrero,marzo y abril de 2025. ", imagen: carlospaz, dias: "5 días 3 noches", descripcion: "Bus semi cama + alojamiento en hotel El Practico con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:160000}, {cant:2, fecha:"marzo" , cambio:"$", precio:160000}]},
-    {id:7, nombre: "Florianopolis", salidas: "En temporada 2024-2025 salimos 15 de diciembre, 01 enero, 15 enero, 01 febrero, 14 febrero y 01 marzo. El precio es a partir de 4 personas. Para grupos menores consultar antes de abonar. " ,imagen: floripa, dias: "9 días 7 noches", descripcion: "Aéreo hasta Puerto Iguazu + Transfer + Bus semi cama + caipirinha de bienvenida + alojamiento en posada Luizinho + 6 noches de boliche.", preciosPersona:[{cant:4, fecha:"enero" , cambio:"u$d", precio:590}, {cant:4, fecha:"marzo", cambio:"u$d", precio:490}]}
+    {id:7, nombre: "Florianopolis", salidas: "En temporada 2024-2025 salimos 15 de diciembre, 01 enero, 15 enero, 01 febrero, 14 febrero y 01 marzo. " ,imagen: floripa, dias: "9 días 7 noches", descripcion: "Aéreo hasta Puerto Iguazu + Transfer + Bus semi cama + caipirinha de bienvenida + alojamiento en posada Luizinho + 6 noches de boliche.", preciosPersona:[{cant:4, fecha:"enero" , cambio:"u$d", precio:590}, {cant:4, fecha:"marzo", cambio:"u$d", precio:490}]}
   ];
 
   function ubicarPack(){
@@ -38,86 +42,14 @@ export default function InfoPago(id) {
   }
   packPorId = ubicarPack();
 
-  // function calculoTotalXCant(){
-  //   let precioTot = undefined;
-  //   console.log(packPorId.preciosPersona)
-  //   for (let i = 0; i < packPorId.preciosPersona.length; i++) {
-  //     if (input.cantpersonas > packPorId.preciosPersona.length - 1){
-  //       precioTot = packPorId.preciosPersona[packPorId.preciosPersona.length - 1].precio * input.cantpersonas;
-  //       i = i + 999;
-  //     } else if (packPorId.preciosPersona[i].cant == input.cantpersonas){
-  //       precioTot = packPorId.preciosPersona[i].precio * input.cantpersonas
-  //     } 
-  
-  //   }
-  //   return precioTot;
-  // }
-
-  function calculoTotal(){
-    let fechaSal = input.fecsalida.toString()
-    let fecSal = fechaSal.slice(0,-3);
-    let precioTot = undefined;
-      if (input.cantpersonas == 1 && id.id < 7){
-        precioTot = packPorId.preciosPersona[0].precio * 1.5
-      } else if (input.cantpersonas != 4 && id.id == 7){
-        precioTot = "consultar";
-      }  else if (fecSal == "2025-01" || fecSal == "2025-02"){
-        precioTot = packPorId.preciosPersona[0].precio * input.cantpersonas
-      } else if (fecSal == "2024-12" || fecSal == "2025-03"){
-        precioTot = packPorId.preciosPersona[1].precio * input.cantpersonas
-      }
-  
-    return precioTot;
+  function tipoDeCambio(){
+    if (id == 7) {
+      return "U$D"
+    } else return "$"
   }
-
-
-  const [ input, setInput ] = useState({
-    name:"",
-    email:"",
-    telefono:"",
-    nacimiento:"",
-    fecsalida:"",
-    destino: packPorId.nombre,
-    cantpersonas:"",
-    cantnoches: packPorId.dias,
-    pedidoadic:""
-  })
-
-  function handleChange(e){
-    setInput({ 
-      ...input,
-      [e.target.name] : e.target.value
-    })
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    const auxCantPerson = input.cantpersonas;
-    const auxFecSalida = input.fecsalida;
-    
-    let auxFecha = input.fecsalida.slice(0,-3); 
-    if( auxFecha == "2024-12" || auxFecha == "2025-03" || auxFecha == "2025-01" || auxFecha == "2025-02" ){
-     dispatch(postPasajeros(input));
-    alert("Recibimos sus datos! Ya puede abonar!");
-    let precTotal = calculoTotal();
-    setInput({
-      name:"",
-      email:"",
-      telefono:"",
-      nacimiento:"",
-      fecsalida:"",
-      destino:"",
-      cantpersonas:"",
-      cantnoches:"",
-      pedidoadic:""
-    })
-    history.push("/abonar/" + id.id + "/" + auxCantPerson +  "/" + precTotal + "/" + auxFecSalida )
-    } else alert("ingrese una fecha entre diciembre 2024 - marzo 2025")
-  }
-
   function infoSalidas(){
-    if(id.id === "7"){
-      return (
+    if(id == 7){
+      return  (
         <div>
           Fechas de salidas: {packPorId.salidas}
           <br />
@@ -136,10 +68,10 @@ export default function InfoPago(id) {
           El regreso es de la misma forma a la inversa. 
         </div>
       )
-    } else if(id.id === "6") {
+    } else if(id == 6) {
       return (
         <div>
-          Fechas de salidas: {packPorId.salidas}
+          Salidas diarias a Villa Carlos Paz:
           <br />
           Salida desde: Terminal Liniers y terminal Retiro (Consultar otros puntos de arribo).
           <br />
@@ -155,10 +87,10 @@ export default function InfoPago(id) {
       )
     } else return(
     <div>
-      Fechas de salidas: {packPorId.salidas}
+      Salidas diarias a playas Argentinas
       
           <br />
-          Salida desde: Terminal Liniers, Llavallol y Cruce Varela (Consultar otros puntos de arribo).
+          Salida desde: Terminal Liniers, rotonda Llavallol y Cruce Varela (Consultar otros puntos de arribo).
           <br />
           Horario estimado de comienzo del recorrido: 05.00 am (segun el punto de partida puede variar).
           <br />
@@ -177,85 +109,39 @@ export default function InfoPago(id) {
   return (
     <div>
       <div className='centradoInfo'>
-        <h3>Reserva</h3>
-        <img src= {packPorId.imagen} alt="" />
-        Para realizar la reserva debe completar el formulario, abonar el pago de minimo del 50% y enviar el comprobante via whatsapp al 1127381642 o via mail a eventosant@gmail.com.
-        Luego se le solicitara nombres completos de los acompañantes, dni, fechas de nacimiento y punto de abordo.
+        <h3>Abonar</h3>
         <br />
-        <div className="pres">        
-          <form onSubmit={(e) => handleSubmit(e)} >
+        Estas comprando el siguiente pack: 
+        <div style={{display: "flex", position: "relative", justifyContent:"center"}}>
+        <img style={{ width : "50%"}} src={packsArmados[id-1].imagen} alt="pack" />
+        </div>
+        <br />
+        Descripcion: {packsArmados[id-1].descripcion}
+        <br />
+        Detalle de compra:
+        <br />
+        Fecha de salida: {fecsalida}
+        <br />
+        Cantidad de pasajeros: { cantpersonas }
+        <br />
+        Total: {tipoDeCambio()} {prectotal}
+        <br />
+        Pago mínimo: {tipoDeCambio()} {prectotal/2}
+        <br />
+        <br />
+          <h4>Formas de Pago</h4>
             <div>
-              <label for="inputName" class="form-label">Nombre:</label>
-              <input class="form-control" id ="inputName"  placeholder='Nombre y apellido' className='forml'
-                type="text"
-                name="name"
-                required
-                onChange={(e) => handleChange(e)} 
-              />
+              Mediante transferencia a:
+              <br />
+              Cvu: 0000003100019762484119
+              <br />
+              Alias: eventosant.mp
+              <br />
+              <br />
+              Tambien puede abonar con tarjetas escanando el qr de MercadoPago:
+              <br />
+              <img className='imageInfo' src={qrmp} alt="qr MercadoPago" />
             </div>
-            <div>
-              <label for="inputEmail" class="form-label">Email:</label>
-              <input class="form-control" id ="inputEmail"  placeholder='Correo electronico' className='forml'
-                type="text"
-                name="email"
-                required
-                onChange={(e) => handleChange(e)} 
-              />
-            </div> 
-            <div>
-              <label for="inputPhone" class="form-label">Celular:</label>
-              <input class="form-control" id ="inputPhone"  placeholder='011 2222 2222' className='forml'
-                type="number"
-                name="telefono"
-                required
-                onChange={(e) => handleChange(e)} 
-              />
-            </div>
-            <div>
-              <label for="inputFecNac" class="form-label">Fecha de Nacimiento:</label>
-              <input class="form-control" id ="inputFecNac" className='forml'
-                type="date"
-                name="nacimiento"
-                required
-                onChange={(e) => handleChange(e)} 
-              />
-            </div>
-            <div>
-              <label for="inputFecEv" class="form-label">Fecha de salida:</label>
-
-              <input class="form-control" id ="inputFecEv"  placeholder='xx/xx/xxxx' className='forml'
-                type="date"
-                name="fecsalida"
-                required
-                onChange={(e) => handleChange(e)} 
-              />
-            </div>
-            <div>
-              <label for="inputPerson" class="form-label">Cantidad de personas:</label>
-              <input class="form-control" id ="inputPerson"  placeholder='Cantidad de personas' className='forml'
-                type="number"
-                name="cantpersonas"
-                required
-                onChange={(e) => handleChange(e)} 
-              />
-            </div>
-            <div>
-              <label for="inputEv" class="form-label">Pedido adicional:</label>
-              <input class="form-control" id ="inputEv"  placeholder='Media pensión, Excursiones, Hotel, Sin pedido adicional, etc.' className='forml'
-                type="text"
-                name="pedidoadic"
-                onChange={(e) => handleChange(e)} 
-              />
-            </div>
-            <br />
-            <div>
-              <button class="btn btn-primary" type='submit'>Reservar</button>
-            </div>
-            {/* <input type="hidden" name="_next" value="http://localhost:3000/infopagos" /> */}
-            {/* <input type="hidden" name="_captcha" value="false" /> */}
-          </form>
-          </div>
-         
             <div className='fondo'>       
               <div className='metpago'>
                 <div className='pag'> 
@@ -264,7 +150,6 @@ export default function InfoPago(id) {
                 </div>       
               </div>
             </div>
-            <br />
             Una vez hecho el pago enviar comprobante por whatsapp al 1127381642 o via mail a eventosant@gmail.com para recibir los vouchers de viaje, junto con la tarjeta de reserva del hotel.
             <br />
             <br />
@@ -289,7 +174,7 @@ export default function InfoPago(id) {
           * La seña en concepto de reserva no es reembolsable en caso de cancelación por parte del pasajero.
           <br />
           * En caso de fuerza mayor o desastre climático Eventos Ant. podrá disponer de un porcentaje no superior al 20% del valor total del viaje en concepto de gastos administrativos y costos de reserva.
-          <br />
+           <br />
           <br />
           Cualquier consulta que tengas, no dudes en contactarnos.
           <br />

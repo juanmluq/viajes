@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.86fa6540.css",
+    "main.js": "/static/js/main.e2063364.js",
+    "static/media/carlospaz.jpg": "/static/media/carlospaz.4f2e5ba5760aef591fe0.jpg",
+    "static/media/santateresita.jpg": "/static/media/santateresita.b100b69a509d5ed374cb.jpg",
+    "static/media/sanber.jpg": "/static/media/sanber.e75691adde7b9d5a247b.jpg",
+    "static/media/mardel.jpg": "/static/media/mardel.96857828115a53121235.jpg",
+    "static/media/gesell.jpg": "/static/media/gesell.782d4997ba41b76a3c02.jpg",
+    "static/media/mardeajo.jpg": "/static/media/mardeajo.0ab8711a8d1ad9594640.jpg",
+    "static/media/floripa.jpg": "/static/media/floripa.5d006cde5c26c9a7c73c.jpg",
+    "static/media/logoviaje.png": "/static/media/logoviaje.b397c9c6097fa7e4dd68.png",
+    "static/media/qrmp.png": "/static/media/qrmp.3773f5d71d0380680622.png",
+    "index.html": "/index.html",
+    "main.86fa6540.css.map": "/static/css/main.86fa6540.css.map",
+    "main.e2063364.js.map": "/static/js/main.e2063364.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86fa6540.css",
+    "static/js/main.e2063364.js"
+  ]
+}
