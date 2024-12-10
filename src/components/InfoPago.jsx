@@ -18,13 +18,13 @@ export default function InfoPago(id) {
   const history = useHistory();
   let packPorId = undefined;
    const packsArmados = [
-    {id:1, nombre: "Santa Teresita", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: santateresita ,dias: "5 días 4 noches", descripcion: "Bus semi cama + alojamiento en hotel Monaco con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:210000}, {cant:2, fecha:"marzo", cambio:"$",precio:200000}]},
-    {id:2, nombre: "Mar de Ajó", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ",imagen: mardeajo, dias: "4 días 3 noches", descripcion: "Bus semi cama + alojamiento en hotel Munich con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:190000}, {cant:2, fecha:"marzo" , cambio:"$", precio:165000}]},
-    {id:3, nombre: "San Bernardo", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: sanber, dias: "5 días 4 noches", descripcion: "Bus semi cama + alojamiento en hotel La Argentina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:210000}, {cant:2, fecha:"marzo" , cambio:"$", precio:200000}]},
-    {id:4, nombre: "Villa Gessel", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: gesell, dias: "4 días 3 noches", descripcion: "Bus semi cama + alojamiento en hotel Aldea Marina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:205000}, {cant:2, fecha:"marzo" , cambio:"$", precio:175000}]},
-    {id:5, nombre: "Mar del Plata", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: mardel, dias: "5 días 4 noches", descripcion: "Bus semi cama + alojamiento en hotel Cielo Azul con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:220000}, {cant:2, fecha:"marzo" , cambio:"$", precio:220000}]},
-    {id:6, nombre: "Villa Carlos Paz", salidas:"Todos los dias de noviembre y diciembre de 2024, enero, febrero,marzo y abril de 2025. ", imagen: carlospaz, dias: "5 días 3 noches", descripcion: "Bus semi cama + alojamiento en hotel El Practico con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:160000}, {cant:2, fecha:"marzo" , cambio:"$", precio:160000}]},
-    {id:7, nombre: "Florianopolis", salidas: "En temporada 2024-2025 salimos 15 de diciembre, 01 enero, 15 enero, 01 febrero, 14 febrero y 01 marzo. El precio es a partir de 4 personas. Para grupos menores consultar antes de abonar. " ,imagen: floripa, dias: "9 días 7 noches", descripcion: "Aéreo hasta Puerto Iguazu + Transfer + Bus semi cama + caipirinha de bienvenida + alojamiento en posada Luizinho + 6 noches de boliche.", preciosPersona:[{cant:4, fecha:"enero" , cambio:"u$d", precio:590}, {cant:4, fecha:"marzo", cambio:"u$d", precio:490}]}
+    {id:1, nombre: "Santa Teresita", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: santateresita ,dias: 4, descripcion: "Bus semi cama + alojamiento en hotel Monaco con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:210000}, {cant:2, fecha:"marzo", cambio:"$",precio:200000}]},
+    {id:2, nombre: "Mar de Ajó", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ",imagen: mardeajo, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel Munich con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:190000}, {cant:2, fecha:"marzo" , cambio:"$", precio:165000}]},
+    {id:3, nombre: "San Bernardo", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: sanber, dias: 4, descripcion: "Bus semi cama + alojamiento en hotel La Argentina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:210000}, {cant:2, fecha:"marzo" , cambio:"$", precio:200000}]},
+    {id:4, nombre: "Villa Gessel", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: gesell, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel Aldea Marina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:205000}, {cant:2, fecha:"marzo" , cambio:"$", precio:175000}]},
+    {id:5, nombre: "Mar del Plata", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: mardel, dias: 4, descripcion: "Bus semi cama + alojamiento en hotel Cielo Azul con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:220000}, {cant:2, fecha:"marzo" , cambio:"$", precio:220000}]},
+    {id:6, nombre: "Villa Carlos Paz", salidas:"Todos los dias de noviembre y diciembre de 2024, enero, febrero,marzo y abril de 2025. ", imagen: carlospaz, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel El Practico con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:160000}, {cant:2, fecha:"marzo" , cambio:"$", precio:160000}]},
+    {id:7, nombre: "Florianopolis", salidas: "En temporada 2024-2025 salimos 15 de diciembre, 01 enero, 15 enero, 01 febrero, 14 febrero y 01 marzo. El precio es a partir de 4 personas. Para grupos menores consultar antes de abonar. " ,imagen: floripa, dias: 7, descripcion: "Aéreo hasta Puerto Iguazu + Transfer + Bus semi cama + caipirinha de bienvenida + alojamiento en posada Luizinho + 6 noches de boliche.", preciosPersona:[{cant:4, fecha:"enero" , cambio:"u$d", precio:590}, {cant:4, fecha:"marzo", cambio:"u$d", precio:490}]}
   ];
 
   function ubicarPack(){
@@ -94,10 +94,9 @@ export default function InfoPago(id) {
     e.preventDefault();
     const auxCantPerson = input.cantpersonas;
     const auxFecSalida = input.fecsalida;
-    
     let auxFecha = input.fecsalida.slice(0,-3); 
     if( auxFecha == "2024-12" || auxFecha == "2025-03" || auxFecha == "2025-01" || auxFecha == "2025-02" ){
-     dispatch(postPasajeros(input));
+      dispatch(postPasajeros(input));
     alert("Recibimos sus datos! Ya puede abonar!");
     let precTotal = calculoTotal();
     setInput({
