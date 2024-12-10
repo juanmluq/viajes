@@ -9,6 +9,7 @@ import Presupuestar from "../components/Presupuestar";
 import Contacto from '../components/Contacto.jsx';
 import InfoPago from '../components/InfoPago';
 import InfoPagoVCP from '../components/InfoPagoVCP.jsx';
+import Abonar from '../components/Abonar.jsx'
 
 function App() {  
   return (
@@ -24,9 +25,16 @@ function App() {
         <Route path="/condiciones"> 
           <Nosotros/>
         </Route>
-        <Route path="/infopagos"> 
-          <InfoPago/>
-        </Route>
+
+        <Route path="/infopagos/:id" render={({match})=>
+        < InfoPago id={(match.params.id)} /> }/> 
+
+        {/* <Route path="/abonar/:id/:cantpersonas/:prectotal/:fecsalida" render={({match})=>
+        < Abonar id={(match.params.id)} /> }/>  */}
+
+        <Route path="/abonar/:id/:cantpersonas/:prectotal/:fecsalida" render={({match})=>
+        < Abonar id={(match.params.id)} /> }/>
+          
         <Route path="/infopagosvcp"> 
           <InfoPagoVCP/>
         </Route>
