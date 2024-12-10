@@ -120,7 +120,7 @@ export default function InfoPago(id) {
         <div>
           Fechas de salidas: {packPorId.salidas}
           <br />
-          Salida desde: Aeropuerto Ezeiza 5 am hasta Puerto Iguazu (horario estimado de vuelo 2hs)
+          Salida desde: Aeroparque 5 am hasta Puerto Iguazu (horario estimado de vuelo 2hs)
           <br />
           Una vez en Puerto Iguazu nos trasladamos en transfer hasta Foz de Iguacu.
           <br />
