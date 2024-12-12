@@ -96,7 +96,7 @@ export default function InfoPago(id) {
     const auxFecSalida = input.fecsalida;
     let auxFecha = input.fecsalida.slice(0,-3); 
     if( auxFecha == "2024-12" || auxFecha == "2025-03" || auxFecha == "2025-01" || auxFecha == "2025-02"|| auxFecha == "2025-04" ){
-      // dispatch(postPasajeros(input));
+      dispatch(postPasajeros(input));
     alert("Recibimos sus datos! Ya puede abonar!");
     let precTotal = calculoTotal();
     setInput({
