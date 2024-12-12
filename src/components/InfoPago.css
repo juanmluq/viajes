@@ -11,6 +11,20 @@
   opacity: 90%;
   text-align: center;
 }
+
+.presTres {
+  position: relative;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  background-color: var(--card-bkg-color);
+  color: white;
+  padding: 0.25rem;
+  margin: 5% 3%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .imageInfo{
   width: 10%;
 }

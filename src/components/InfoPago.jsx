@@ -18,13 +18,13 @@ export default function InfoPago(id) {
   const history = useHistory();
   let packPorId = undefined;
    const packsArmados = [
-    {id:1, nombre: "Santa Teresita", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: santateresita ,dias: 4, descripcion: "Bus semi cama + alojamiento en hotel Monaco con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:210000}, {cant:2, fecha:"marzo", cambio:"$",precio:200000}]},
-    {id:2, nombre: "Mar de Ajó", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ",imagen: mardeajo, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel Munich con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:190000}, {cant:2, fecha:"marzo" , cambio:"$", precio:165000}]},
-    {id:3, nombre: "San Bernardo", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: sanber, dias: 4, descripcion: "Bus semi cama + alojamiento en hotel La Argentina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:210000}, {cant:2, fecha:"marzo" , cambio:"$", precio:200000}]},
-    {id:4, nombre: "Villa Gessel", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: gesell, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel Aldea Marina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:205000}, {cant:2, fecha:"marzo" , cambio:"$", precio:175000}]},
-    {id:5, nombre: "Mar del Plata", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: mardel, dias: 4, descripcion: "Bus semi cama + alojamiento en hotel Cielo Azul con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:220000}, {cant:2, fecha:"marzo" , cambio:"$", precio:220000}]},
-    {id:6, nombre: "Villa Carlos Paz", salidas:"Todos los dias de noviembre y diciembre de 2024, enero, febrero,marzo y abril de 2025. ", imagen: carlospaz, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel El Practico con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:160000}, {cant:2, fecha:"marzo" , cambio:"$", precio:160000}]},
-    {id:7, nombre: "Florianopolis", salidas: "En temporada 2024-2025 salimos 15 de diciembre, 01 enero, 15 enero, 01 febrero, 14 febrero y 01 marzo. El precio es a partir de 4 personas. Para grupos menores consultar antes de abonar. " ,imagen: floripa, dias: 7, descripcion: "Aéreo hasta Puerto Iguazu + Transfer + Bus semi cama + caipirinha de bienvenida + alojamiento en posada Luizinho + 6 noches de boliche.", preciosPersona:[{cant:4, fecha:"enero" , cambio:"u$d", precio:590}, {cant:4, fecha:"marzo", cambio:"u$d", precio:490}]}
+    {id:1, nombre: "Santa Teresita", salidas: "En temporada 2024-2025 salimos todos los días de diciembre, febrero, marzo y abril. En enero salimos 4, 15, 18, 21 y 24. ", imagen: santateresita ,dias: 4, descripcion: "Bus semi cama + alojamiento en hotel Monaco con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:210000}, {cant:2, fecha:"marzo", cambio:"$",precio:200000}]},
+    {id:2, nombre: "Mar de Ajó", salidas: "En temporada 2024-2025 salimos todos los días de diciembre, febrero, marzo y abril. En enero salimos 4, 15, 18, 21 y 24. ",imagen: mardeajo, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel Munich con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:190000}, {cant:2, fecha:"marzo" , cambio:"$", precio:165000}]},
+    {id:3, nombre: "San Bernardo", salidas: "En temporada 2024-2025 salimos todos los días de diciembre, febrero, marzo y abril. En enero salimos 4, 15, 18, 21 y 24. ", imagen: sanber, dias: 4, descripcion: "Bus semi cama + alojamiento en hotel La Argentina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:210000}, {cant:2, fecha:"marzo" , cambio:"$", precio:200000}]},
+    {id:4, nombre: "Villa Gessel", salidas: "En temporada 2024-2025 salimos todos los días de diciembre, febrero, marzo y abril. En enero salimos 4, 15, 18, 21 y 24. ", imagen: gesell, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel Aldea Marina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:205000}, {cant:2, fecha:"marzo" , cambio:"$", precio:175000}]},
+    {id:5, nombre: "Mar del Plata", salidas: "En temporada 2024-2025 salimos todos los días de diciembre, febrero, marzo y abril. En enero salimos 4, 15, 18, 21 y 24. ", imagen: mardel, dias: 4, descripcion: "Bus semi cama + alojamiento en hotel Cielo Azul con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:220000}, {cant:2, fecha:"marzo" , cambio:"$", precio:220000}]},
+    {id:6, nombre: "Villa Carlos Paz", salidas:"Todos los días de noviembre y diciembre de 2024, enero, febrero,marzo y abril de 2025. ", imagen: carlospaz, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel El Practico con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:160000}, {cant:2, fecha:"marzo" , cambio:"$", precio:160000}]},
+    {id:7, nombre: "Florianópolis", salidas: "En temporada 2024-2025 salimos 15 de diciembre, 01 enero, 15 enero, 01 febrero, 14 febrero, 01 marzo, 15 marzo y 01 abril. El precio es a partir de 4 personas. Para grupos menores consultar antes de abonar. " ,imagen: floripa, dias: 7, descripcion: "Aéreo hasta Puerto Iguazu + Transfer + Bus semi cama + caipirinha de bienvenida + alojamiento en posada Luizinho + 6 noches de boliche.", preciosPersona:[{cant:4, fecha:"enero" , cambio:"u$d", precio:590}, {cant:4, fecha:"marzo", cambio:"u$d", precio:490}]}
   ];
 
   function ubicarPack(){
@@ -63,7 +63,7 @@ export default function InfoPago(id) {
         precioTot = "consultar";
       }  else if (fecSal == "2025-01" || fecSal == "2025-02"){
         precioTot = packPorId.preciosPersona[0].precio * input.cantpersonas
-      } else if (fecSal == "2024-12" || fecSal == "2025-03"){
+      } else if (fecSal == "2024-12" || fecSal == "2025-03" || fecSal== "2025-04" ){
         precioTot = packPorId.preciosPersona[1].precio * input.cantpersonas
       }
   
@@ -95,8 +95,8 @@ export default function InfoPago(id) {
     const auxCantPerson = input.cantpersonas;
     const auxFecSalida = input.fecsalida;
     let auxFecha = input.fecsalida.slice(0,-3); 
-    if( auxFecha == "2024-12" || auxFecha == "2025-03" || auxFecha == "2025-01" || auxFecha == "2025-02" ){
-      dispatch(postPasajeros(input));
+    if( auxFecha == "2024-12" || auxFecha == "2025-03" || auxFecha == "2025-01" || auxFecha == "2025-02"|| auxFecha == "2025-04" ){
+      // dispatch(postPasajeros(input));
     alert("Recibimos sus datos! Ya puede abonar!");
     let precTotal = calculoTotal();
     setInput({
@@ -111,7 +111,7 @@ export default function InfoPago(id) {
       pedidoadic:""
     })
     history.push("/abonar/" + id.id + "/" + auxCantPerson +  "/" + precTotal + "/" + auxFecSalida )
-    } else alert("ingrese una fecha entre diciembre 2024 - marzo 2025")
+    } else alert("ingrese una fecha entre diciembre 2024 - abril 2025")
   }
 
   function infoSalidas(){
@@ -177,11 +177,11 @@ export default function InfoPago(id) {
     <div>
       <div className='centradoInfo'>
         <h3>Reserva</h3>
-        <img src= {packPorId.imagen} alt="" />
-        Para realizar la reserva debe completar el formulario, abonar el pago de minimo del 50% y enviar el comprobante via whatsapp al 1127381642 o via mail a eventosant@gmail.com.
+          <img src= {packPorId.imagen} alt="img pack" />
+        Para realizar la reserva debe completar el formulario, abonar el pago minimo del 50% y enviar el comprobante via whatsapp al 1127381642 o via mail a eventosant@gmail.com.
         Luego se le solicitara nombres completos de los acompañantes, dni, fechas de nacimiento y punto de abordo.
         <br />
-        <div className="pres">        
+        <div className="presTres">        
           <form onSubmit={(e) => handleSubmit(e)} >
             <div>
               <label for="inputName" class="form-label">Nombre:</label>
@@ -264,7 +264,7 @@ export default function InfoPago(id) {
               </div>
             </div>
             <br />
-            Una vez hecho el pago enviar comprobante por whatsapp al 1127381642 o via mail a eventosant@gmail.com para recibir los vouchers de viaje, junto con la tarjeta de reserva del hotel.
+            Una vez hecho el pago enviar comprobante por whatsapp al 1127381642 o via mail a eventosant@gmail.com para recibir los vouchers de viaje, junto con la tarjeta de reserva del alojamiento.
             <br />
             <br />
         <div>

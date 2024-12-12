@@ -22,13 +22,13 @@ export default function Abonar() {
   let packPorId = undefined;
   console.log(id);
    const packsArmados = [
-    {id:1, nombre: "Santa Teresita", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: santateresita ,dias: "5 días 4 noches", descripcion: "Bus semi cama + alojamiento en hotel Monaco con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:210000}, {cant:2, fecha:"marzo", cambio:"$",precio:200000}]},
-    {id:2, nombre: "Mar de Ajó", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ",imagen: mardeajo, dias: "4 días 3 noches", descripcion: "Bus semi cama + alojamiento en hotel Munich con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:190000}, {cant:2, fecha:"marzo" , cambio:"$", precio:165000}]},
-    {id:3, nombre: "San Bernardo", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: sanber, dias: "5 días 4 noches", descripcion: "Bus semi cama + alojamiento en hotel La Argentina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:210000}, {cant:2, fecha:"marzo" , cambio:"$", precio:200000}]},
-    {id:4, nombre: "Villa Gessel", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: gesell, dias: "4 días 3 noches", descripcion: "Bus semi cama + alojamiento en hotel Aldea Marina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:205000}, {cant:2, fecha:"marzo" , cambio:"$", precio:175000}]},
-    {id:5, nombre: "Mar del Plata", salidas: "En temporada 2024-2025 salimos todos los dias de diciembre, febrero y marzo. En enero salimos 4, 15, 18, 21 y 24. ", imagen: mardel, dias: "5 días 4 noches", descripcion: "Bus semi cama + alojamiento en hotel Cielo Azul con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:220000}, {cant:2, fecha:"marzo" , cambio:"$", precio:220000}]},
-    {id:6, nombre: "Villa Carlos Paz", salidas:"Todos los dias de noviembre y diciembre de 2024, enero, febrero,marzo y abril de 2025. ", imagen: carlospaz, dias: "5 días 3 noches", descripcion: "Bus semi cama + alojamiento en hotel El Practico con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:160000}, {cant:2, fecha:"marzo" , cambio:"$", precio:160000}]},
-    {id:7, nombre: "Florianopolis", salidas: "En temporada 2024-2025 salimos 15 de diciembre, 01 enero, 15 enero, 01 febrero, 14 febrero y 01 marzo. " ,imagen: floripa, dias: "9 días 7 noches", descripcion: "Aéreo hasta Puerto Iguazu + Transfer + Bus semi cama + caipirinha de bienvenida + alojamiento en posada Luizinho + 6 noches de boliche.", preciosPersona:[{cant:4, fecha:"enero" , cambio:"u$d", precio:590}, {cant:4, fecha:"marzo", cambio:"u$d", precio:490}]}
+    {id:1, nombre: "Santa Teresita", salidas: "En temporada 2024-2025 salimos todos los días de diciembre, febrero, marzo y abril. En enero salimos 4, 15, 18, 21 y 24. ", imagen: santateresita ,dias: 4, descripcion: "Bus semi cama + alojamiento en hotel Monaco con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:210000}, {cant:2, fecha:"marzo", cambio:"$",precio:200000}]},
+    {id:2, nombre: "Mar de Ajó", salidas: "En temporada 2024-2025 salimos todos los días de diciembre, febrero, marzo y abril. En enero salimos 4, 15, 18, 21 y 24. ",imagen: mardeajo, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel Munich con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:190000}, {cant:2, fecha:"marzo" , cambio:"$", precio:165000}]},
+    {id:3, nombre: "San Bernardo", salidas: "En temporada 2024-2025 salimos todos los días de diciembre, febrero, marzo y abril. En enero salimos 4, 15, 18, 21 y 24. ", imagen: sanber, dias: 4, descripcion: "Bus semi cama + alojamiento en hotel La Argentina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:210000}, {cant:2, fecha:"marzo" , cambio:"$", precio:200000}]},
+    {id:4, nombre: "Villa Gessel", salidas: "En temporada 2024-2025 salimos todos los días de diciembre, febrero, marzo y abril. En enero salimos 4, 15, 18, 21 y 24. ", imagen: gesell, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel Aldea Marina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:205000}, {cant:2, fecha:"marzo" , cambio:"$", precio:175000}]},
+    {id:5, nombre: "Mar del Plata", salidas: "En temporada 2024-2025 salimos todos los días de diciembre, febrero, marzo y abril. En enero salimos 4, 15, 18, 21 y 24. ", imagen: mardel, dias: 4, descripcion: "Bus semi cama + alojamiento en hotel Cielo Azul con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:220000}, {cant:2, fecha:"marzo" , cambio:"$", precio:220000}]},
+    {id:6, nombre: "Villa Carlos Paz", salidas:"Todos los días de noviembre y diciembre de 2024, enero, febrero,marzo y abril de 2025. ", imagen: carlospaz, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel El Practico con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:160000}, {cant:2, fecha:"marzo" , cambio:"$", precio:160000}]},
+    {id:7, nombre: "Florianópolis", salidas: "En temporada 2024-2025 salimos 15 de diciembre, 01 enero, 15 enero, 01 febrero, 14 febrero, 01 marzo, 15 marzo y 01 abril. El precio es a partir de 4 personas. Para grupos menores consultar antes de abonar. " ,imagen: floripa, dias: 7, descripcion: "Aéreo hasta Puerto Iguazu + Transfer + Bus semi cama + caipirinha de bienvenida + alojamiento en posada Luizinho + 6 noches de boliche.", preciosPersona:[{cant:4, fecha:"enero" , cambio:"u$d", precio:590}, {cant:4, fecha:"marzo", cambio:"u$d", precio:490}]}
   ];
 
   function ubicarPack(){
@@ -113,7 +113,7 @@ export default function Abonar() {
         <br />
         Estas comprando el siguiente pack: 
         <div style={{display: "flex", position: "relative", justifyContent:"center"}}>
-        <img style={{ width : "50%"}} src={packsArmados[id-1].imagen} alt="pack" />
+        <img style={{ width : "70%"}} src={packsArmados[id-1].imagen} alt="pack" />
         </div>
         <br />
         Descripcion: {packsArmados[id-1].descripcion}
@@ -155,31 +155,31 @@ export default function Abonar() {
             <br />
         <div>
           <h4>Info Salidas</h4>
-          {infoSalidas()}
-          <br />
-          <br />
-          <h4>Condiciones: </h4>
-          * El micro puede llegar hasta donde lo permita la secretaria de turismo en la ciudad elegida. En el caso que llegue a la terminal de ómnibus el pasajero debe abonar el taxi/remis para el traslado interno a su alojamiento.
-          <br />
-          * Las tarifas no incluyen seguro de asistencia al viajero, sugerimos la contratación del mismo. Solicitar tarifa especial en cada caso.
-          <br />
-          * Al momento de subir al micro, se presentarán los comprobantes de cada uno de los depósitos de reserva.
-          <br />
-          * Los horarios son estimados y sujetos a modificación. En caso de algún cambio, serán informados previamente por el coordinador.
-          <br />
-          * En el caso que el bus contratado tenga alguna ruptura, el pasajero aceptara el tiempo de reparación o recambio del coche.
-          <br />
-          * El único responsable frente al pasajero es el transportador que efectúa el traslado.
-          <br />
-          * La seña en concepto de reserva no es reembolsable en caso de cancelación por parte del pasajero.
-          <br />
-          * En caso de fuerza mayor o desastre climático Eventos Ant. podrá disponer de un porcentaje no superior al 20% del valor total del viaje en concepto de gastos administrativos y costos de reserva.
-           <br />
-          <br />
-          Cualquier consulta que tengas, no dudes en contactarnos.
-          <br />
-          <br />
-          Eventos Ant.
+            {infoSalidas()}
+            <br />
+            <br />
+            <h4>Condiciones: </h4>
+            * El micro puede llegar hasta donde lo permita la secretaria de turismo en la ciudad elegida. En el caso que llegue a la terminal de ómnibus el pasajero debe abonar el taxi/remis para el traslado interno a su alojamiento.
+            <br />
+            * Las tarifas no incluyen seguro de asistencia al viajero, sugerimos la contratación del mismo. Solicitar tarifa especial en cada caso.
+            <br />
+            * Al momento de subir al micro, se presentarán los comprobantes de cada uno de los depósitos de reserva.
+            <br />
+            * Los horarios son estimados y sujetos a modificación. En caso de algún cambio, serán informados previamente por el coordinador.
+            <br />
+            * En el caso que el bus contratado tenga alguna ruptura, el pasajero aceptara el tiempo de reparación o recambio del coche.
+            <br />
+            * El único responsable frente al pasajero es el transportador que efectúa el traslado.
+            <br />
+            * La seña en concepto de reserva no es reembolsable en caso de cancelación por parte del pasajero.
+            <br />
+            * En caso de fuerza mayor o desastre climático Eventos Ant. podrá disponer de un porcentaje no superior al 20% del valor total del viaje en concepto de gastos administrativos y costos de reserva.
+            <br />
+            <br />
+            Cualquier consulta que tengas, no dudes en contactarnos.
+            <br />
+            <br />
+            Eventos Ant.
         </div>      
       </div>
       <footer className='piePagin'>
