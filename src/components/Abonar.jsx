@@ -28,7 +28,7 @@ export default function Abonar() {
     {id:4, nombre: "Villa Gessel", salidas: "En temporada 2024-2025 salimos todos los días de diciembre, febrero, marzo y abril. En enero salimos 4, 15, 18, 21 y 24. ", imagen: gesell, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel Aldea Marina con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:205000}, {cant:2, fecha:"marzo" , cambio:"$", precio:175000}]},
     {id:5, nombre: "Mar del Plata", salidas: "En temporada 2024-2025 salimos todos los días de diciembre, febrero, marzo y abril. En enero salimos 4, 15, 18, 21 y 24. ", imagen: mardel, dias: 4, descripcion: "Bus semi cama + alojamiento en hotel Cielo Azul con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:220000}, {cant:2, fecha:"marzo" , cambio:"$", precio:220000}]},
     {id:6, nombre: "Villa Carlos Paz", salidas:"Todos los días de noviembre y diciembre de 2024, enero, febrero,marzo y abril de 2025. ", imagen: carlospaz, dias: 3, descripcion: "Bus semi cama + alojamiento en hotel El Practico con desayuno.", preciosPersona:[{cant:2, fecha:"enero" , cambio:"$", precio:160000}, {cant:2, fecha:"marzo" , cambio:"$", precio:160000}]},
-    {id:7, nombre: "Florianópolis", salidas: "En temporada 2024-2025 salimos 15 de diciembre, 01 enero, 15 enero, 01 febrero, 14 febrero, 01 marzo, 15 marzo y 01 abril. El precio es a partir de 4 personas. Para grupos menores consultar antes de abonar. " ,imagen: floripa, dias: 7, descripcion: "Aéreo hasta Puerto Iguazu + Transfer + Bus semi cama + caipirinha de bienvenida + alojamiento en posada Luizinho + 6 noches de boliche.", preciosPersona:[{cant:4, fecha:"enero" , cambio:"u$d", precio:590}, {cant:4, fecha:"marzo", cambio:"u$d", precio:490}]}
+    {id:7, nombre: "Florianópolis", salidas: "En temporada 2024-2025 salimos 15 de diciembre, 01 enero, 8 enero, 15 enero, 01 febrero, 14 febrero, 21 febrero, 01 marzo, 15 marzo y 01 abril. El precio es a partir de 4 personas. Para grupos menores consultar antes de abonar. " ,imagen: floripa, dias: 7, descripcion: "Aéreo hasta Puerto Iguazu + Transfer + Bus semi cama + caipirinha de bienvenida + alojamiento en posada Luizinho + 6 noches de boliche.", preciosPersona:[{cant:4, fecha:"enero" , cambio:"u$d", precio:590}, {cant:4, fecha:"marzo", cambio:"u$d", precio:490}]}
   ];
 
   function ubicarPack(){
@@ -51,22 +51,22 @@ export default function Abonar() {
     if(id == 7){
       return  (
         <div>
-          Fechas de salidas: {packPorId.salidas}
-          <br />
-          Salida desde: Aeropuerto Ezeiza 5 am hasta Puerto Iguazu (horario estimado de vuelo 2hs)
-          <br />
-          Una vez en Puerto Iguazu nos trasladamos en transfer hasta Foz de Iguacu.
-          <br />
-          Ya en Brasil, abordamos al bus que nos traladara hasta Florianópolis.
-          <br />
-          A partir del arribo a la ciudad tienen la cantidad de noches detalladas en el pack incluidas en el alojamiento.
-          <br />
-          El regreso a casa se realiza pasadas las noches correspondientes a las 11:00 am aprox desde la terminal correspondiente.
-          <br />
-          El checkin al hotel es a las 13 hs aprox. De llegar antes pueden dejar sus bolsos en recepción y salir a pasear.
-          <br />
-          El regreso es de la misma forma a la inversa. 
-        </div>
+        Fechas de salidas: {packPorId.salidas}
+        <br />
+        Salida desde: Aeroparque 5 am aprox hasta Puerto Iguazu (horario estimado de vuelo 2hs)
+        <br />
+        Una vez en Puerto Iguazu nos trasladamos en transfer hasta Foz de Iguacu.
+        <br />
+        Ya en Brasil, abordamos al bus que nos traladara hasta Florianópolis.
+        <br />
+        A partir del arribo a la ciudad tienen 7 noches incluidas en el alojamiento.
+        <br />
+        El checkin al alojamiento es a las 13 hs aprox. De llegar antes pueden dejar sus bolsos en recepción y salir a pasear.
+        <br />
+        El regreso a casa se realiza pasadas las noches correspondientes a las 11:00 am aprox desde la terminal de Florianópolis.
+        <br />
+        El micro los llevara hasta Iguazu y desde ahí haremos el arribo a nuestro aéreo que nos devolvera a Bs As. 
+      </div>
       )
     } else if(id == 6) {
       return (
